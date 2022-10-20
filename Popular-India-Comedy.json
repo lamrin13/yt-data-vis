@@ -1,0 +1,45 @@
+[
+    {
+      "name": "anticipation",
+      "radius": 1,
+      "values": [{ "label": "foo", "value": 250 }]
+    },
+    {
+      "name": "fear",
+      "radius": 2.5,
+      "values": [{ "label": "foo", "value": 250 }]
+    },
+  
+    
+    {
+      "name": "joy",
+      "radius": 5,
+      "values": [{ "label": "foo", "value": 250 }]
+    },
+    {
+      "name": "disgust",
+      "radius": 4,
+      "values": [{ "label": "foo", "value": 250 }]
+    },
+    {
+      "name": "surprise",
+      "radius": 4.5,
+      "values": [{ "label": "foo", "value": 250 }]
+    },
+    {
+      "name": "trust",
+      "radius": 5,
+      "values": [{ "label": "foo", "value": 250 }]
+    },
+    {
+      "name": "anger",
+      "radius": 2,
+      "values": [{ "label": "foo", "value": 250 }]
+    },
+    {
+      "name": "sadness",
+      "radius": 1.5,
+      "values": [{ "label": "sadness", "value": 3 }]
+    }
+  ]
+  

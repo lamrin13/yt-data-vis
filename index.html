@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        id="observablehq-chart1-935c21d9"
+        style="width: 40%; height: 10%"
+        class="charts"
+      ></div>
+    </div>
+    <div
+      id="observablehq-chart-1f0a2129"
+      style="width: 50%; height: 50%"
+    ></div>
+    <script type="module" src="app.js"></script>
+
+    <!-- <script type="module">
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/20a3616fe6b06e3c@506.js?v=3";
+      new Runtime().module(define, (name) => {
+        if (name === "chart1")
+          return new Inspector(
+            document.querySelector("#observablehq-chart1-89d751a0")
+          );
+      });
+    </script> -->
+  </body>
+</html>
