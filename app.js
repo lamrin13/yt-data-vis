@@ -3,7 +3,7 @@ import {
     Inspector,
 } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import notebook from "./temp.js";
-import define from "https://api.observablehq.com/d/2f691757ac83a209@1177.js?v=3";
+import define from "https://api.observablehq.com/d/2f691757ac83a209@1281.js?v=3";
 
 const main = new Runtime().module(notebook, (name) => {
     switch (name) {
