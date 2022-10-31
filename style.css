@@ -37,7 +37,20 @@
 #myviz{
     width: 180%;
     height: 100%;
+    /* background-color: aliceblue; */
 }
 .charts1{
     display: inline-block;
 }
+
+.myYaxis .tick:last-child{
+    opacity: 0;
+}
+
+.bubbles {
+    stroke-width: 2px;
+    stroke: white;
+  }
+  .bubbles:hover {
+    stroke: black;
+  }
