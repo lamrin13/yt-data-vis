@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
 .bar {
     fill: steelblue;
 }
@@ -37,6 +41,7 @@
 #myviz{
     width: 180%;
     height: 100%;
+    overflow-x: hidden;
     /* background-color: aliceblue; */
 }
 .charts1{
@@ -46,11 +51,18 @@
 .myYaxis .tick:last-child{
     opacity: 0;
 }
-
+#bubble{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 .bubbles {
     stroke-width: 2px;
     stroke: white;
-  }
-  .bubbles:hover {
+}
+.bubbles:hover {
     stroke: black;
-  }
+}
+
+.x{
+    font-size: 18;
+}
