@@ -4,6 +4,7 @@ import {
 } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import notebook from "./temp.js";
 import define from "https://api.observablehq.com/d/2f691757ac83a209@1281.js?v=3";
+import bubble from "https://api.observablehq.com/d/591ec25efcb5dcd5@267.js?v=3";
 
 const main = new Runtime().module(notebook, (name) => {
     switch (name) {
@@ -23,6 +24,12 @@ const flower = new Runtime().module(define, (name) => {
             document.querySelector("#observablehq-chart-1f0a2129")
         );
 });
+const bubble_plot = new Runtime().module(bubble, (name) => {
+    if(name === "chart")
+        return new Inspector(
+            document.querySelector("#bubble")
+        );
+})
 flower.redefine(
     "data",
     fetch("Popular.json").then((resp) => resp.json())
