@@ -1,0 +1,43 @@
+.bar {
+    fill: steelblue;
+}
+
+.highlight {
+    fill: orange;
+}
+
+.arc text {
+    font: 10px sans-serif;
+    text-anchor: middle;
+}
+
+.arc path {
+    stroke: #fff;
+}
+
+.title {
+    fill: teal;
+    font-weight: bold;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+.charts{
+    /* width: 50%; */
+    /* height: 400px; */
+    /* background: rgb(253, 5, 109); */
+}
+.charts:first-child {
+    margin-right: 20px;
+} 
+
+#myviz{
+    width: 180%;
+    height: 100%;
+}
+.charts1{
+    display: inline-block;
+}
