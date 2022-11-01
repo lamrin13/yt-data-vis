@@ -1,5 +1,6 @@
 body{
     background-color: rgb(255, 255, 255);
+    overflow-y: hidden;
 }
 
 .bar {
@@ -27,7 +28,8 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
+    column-gap: 15px;
+    overflow-y: hidden;
 }
 .charts{
     /* width: 50%; */
@@ -35,7 +37,7 @@ body{
     /* background: rgb(253, 5, 109); */
 }
 .charts:first-child {
-    margin-right: 20px;
+    margin-right: 10px;
 } 
 
 #myviz{
@@ -63,6 +65,25 @@ body{
     stroke: black;
 }
 
-.x{
+/* .x{
     font-size: 18;
+} */
+
+
+.bars:hover{
+    stroke: black;
+}
+#flowerplot{
+    width: 180%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 20%;
+    /* background-color: aliceblue; */
+}
+
+@media (max-width: 1680px) {
+    #flowerplot{
+        width: 135%;
+    }
 }
