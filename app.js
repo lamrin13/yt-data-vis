@@ -3,7 +3,7 @@ import {
     Inspector,
 } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import notebook from "./temp.js";
-import define from "https://api.observablehq.com/d/2f691757ac83a209@1320.js?v=3";
+import define from "https://api.observablehq.com/d/2f691757ac83a209@1324.js?v=3";
 import bubble from "https://api.observablehq.com/d/591ec25efcb5dcd5@544.js?v=3";
 import barchart from "https://api.observablehq.com/d/72ed590acb359427.js?v=3";
 
@@ -22,7 +22,7 @@ main.redefine(
 const flower = new Runtime().module(define, (name) => {
     if (name === "chart")
         return new Inspector(
-            document.querySelector("#observablehq-chart-1f0a2129")
+            document.querySelector("#flowerroot")
         );
 });
 const bubble_plot = new Runtime().module(bubble, (name) => {
@@ -31,7 +31,8 @@ const bubble_plot = new Runtime().module(bubble, (name) => {
             document.querySelector("#bubble")
         );
 })
-
+bubble_plot.redefine("data",
+fetch("Popular-bubble.json").then((resp)=>resp.json()))
 const bar_plot = new Runtime().module(barchart, (name) => {
     if(name === "chart")
         return new Inspector(

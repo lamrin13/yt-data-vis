@@ -31,11 +31,26 @@ body{
     column-gap: 15px;
     overflow-y: hidden;
 }
-.charts{
-    /* width: 50%; */
-    /* height: 400px; */
-    /* background: rgb(253, 5, 109); */
+
+.container1{
+    overflow-y: hidden;
 }
+#flowerroot{
+    float: left;
+    width: 49%;
+}
+#barplot{
+    float: left;
+    width: 49%;
+}
+.arrow{
+    float:right;
+    align-self: center;
+}
+.charts{
+    background-color: white;
+}
+
 .charts:first-child {
     margin-right: 10px;
 } 
@@ -80,10 +95,10 @@ body{
     overflow-y: hidden;
     padding-left: 20%;
     /* background-color: aliceblue; */
-}
+} 
 
 @media (max-width: 1680px) {
     #flowerplot{
-        width: 135%;
+        width: 140%;
     }
 }

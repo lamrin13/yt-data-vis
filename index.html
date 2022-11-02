@@ -2,39 +2,23 @@
 <html lang="en">
   <head>
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
-      <div
-        id="observablehq-chart1-935c21d9"
-        class="charts"
-      ></div>
+      <div id="observablehq-chart1-935c21d9" class="charts"></div>
       <div id="bubble" class="charts"></div>
     </div>
-    <div class="container">
-      <div
-      id="observablehq-chart-1f0a2129"
-      class="charts"
-    ></div>
-    <div id="barplot" class="charts"></div>
-
+    <div class="container1">
+      <div id="flowerroot" class="charts"></div>
+      <div id="barplot"></div>
+      <i class="fa fa-caret-right" style="font-size:48px;"></i>
     </div>
-    
-    <script type="module" src="app.js"></script>
 
-    <!-- <script type="module">
-      import {
-        Runtime,
-        Inspector,
-      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/20a3616fe6b06e3c@506.js?v=3";
-      new Runtime().module(define, (name) => {
-        if (name === "chart1")
-          return new Inspector(
-            document.querySelector("#observablehq-chart1-89d751a0")
-          );
-      });
-    </script> -->
+    <script type="module" src="app.js"></script>
   </body>
 </html>
