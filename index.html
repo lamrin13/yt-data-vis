@@ -2,23 +2,33 @@
 <html lang="en">
   <head>
     <script src="https://d3js.org/d3.v6.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="app.js"></script>
+    <script type="module" src="comparator-app.js"></script>
+    
   </head>
   <body>
-    <div class="container">
-      <div id="observablehq-chart1-935c21d9" class="charts"></div>
-      <div id="bubble" class="charts"></div>
+    
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="container">
+          <div id="observablehq-chart1-935c21d9" class="charts"></div>
+          <div id="bubble" class="charts"></div>
+        </div>
+        <div class="container1">
+          <div id="flowerroot" class="charts"></div>
+          <div id="barplot"></div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div id="my_dataviz"></div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="container1">
-      <div id="flowerroot" class="charts"></div>
-      <div id="barplot"></div>
-      <i class="fa fa-caret-right" style="font-size:48px;"></i>
-    </div>
-
-    <script type="module" src="app.js"></script>
+    <script type="module">
+      import { plusSlides } from "./app.js";
+      window.plusSlides = plusSlides;
+    </script>
   </body>
 </html>
