@@ -1,4 +1,4 @@
-import { temp } from './app.js'
+import { dataLoad } from './app.js'
 
 function _1(md){return(
     md`# Zoomable Treemap
@@ -52,7 +52,7 @@ function _1(md){return(
           .data((d) =>
             (d === root ? name(d) : d.data.name)
               .split(/(?=[^A-Z][[^a-z]])/g) 
-              .concat(format(d.value))
+              .concat(d3.formatPrefix(".1", d.value)(d.value))
           )
           .join("tspan")
           // .attr("transform", function (d) {
@@ -104,7 +104,7 @@ function _1(md){return(
               .attrTween("opacity", () => d3.interpolate(0, 1))
               .call(position, d)
           );
-          temp(name(d));
+          dataLoad(name(d));
       }
 
       // When zooming out, draw the old nodes on top, and fade them out.
@@ -127,7 +127,7 @@ function _1(md){return(
           )
           .call((t) => group1.transition(t).call(position, d.parent));
 
-          temp(name(d.parent));
+          dataLoad(name(d.parent));
       }
     
       return svg.node();
@@ -179,7 +179,7 @@ function _1(md){return(
     )}
     
     function _format(d3){return(
-    d3.format(",d")
+    d3.format(".4s")
     )}
     
     function _d3(require){return(

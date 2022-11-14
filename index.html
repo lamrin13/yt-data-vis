@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="app.js"></script>
     <script type="module" src="comparator-app.js"></script>
-    
+    <script type="module" src="radarChart.js"></script>
   </head>
   <body>
     
@@ -13,6 +13,7 @@
       <div class="mySlides fade">
         <div class="container">
           <div id="observablehq-chart1-935c21d9" class="charts"></div>
+          <!-- <div id="bubble1" ></div> -->
           <div id="bubble" class="charts"></div>
         </div>
         <div class="container1">
@@ -21,8 +22,42 @@
         </div>
       </div>
       <div class="mySlides fade">
-        <div id="my_dataviz"></div>
+        <div class="container">
+          <div id="my_dataviz"></div>
+          <div class="radarChart"></div>
+        </div>
+        <div class="contianer1">
+          <div id="bubble1" class="charts"></div>
+        </div>
       </div>
+      <defs
+      ><marker
+        id="#arrowhead-right"
+        refX="5"
+        refY="4"
+        markerWidth="16"
+        markerHeight="13"
+        ><path
+          d="M 0 0 L 5 5 L 0 10"
+          stroke="black"
+          stroke-width="1"
+          fill="none"
+        ></path></marker
+    ></defs>
+    <defs
+      ><marker
+        id="#arrowhead-up"
+        refX="5"
+        refY="4"
+        markerWidth="16"
+        markerHeight="13"
+        ><path
+          d="M 10 10 L 5 5 L 0 10"
+          stroke="black"
+          stroke-width="1"
+          fill="none"
+        ></path></marker
+    ></defs>
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>

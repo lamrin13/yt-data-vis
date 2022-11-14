@@ -61,6 +61,12 @@ body{
     overflow-x: hidden;
     /* background-color: aliceblue; */
 }
+#myviz1{
+    width: 180%;
+    height: 100%;
+    overflow-x: hidden;
+    /* background-color: aliceblue; */
+}
 .charts1{
     display: inline-block;
 }
@@ -72,12 +78,14 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.bubbles {
-    stroke-width: 2px;
-    stroke: white;
+#bubble1{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 45%;
 }
 .bubbles:hover {
-    stroke: black;
+    stroke-width: 5;
+    transition: stroke-width 1s;
 }
 
 /* .x{
@@ -86,7 +94,8 @@ body{
 
 
 .bars:hover{
-    stroke: black;
+    stroke-width: 5;
+    transition: stroke-width 1s;
 }
 #flowerplot{
     width: 180%;
@@ -158,3 +167,12 @@ body{
     from {opacity: .4}
     to {opacity: 1}
   }  
+
+  legend {
+    font-family: 'Raleway', sans-serif;
+    fill: #333333;
+}
+
+.tooltip {
+    fill: #333333;
+}
