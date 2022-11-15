@@ -6,7 +6,7 @@ import notebook from "./treemap.js";
 import define from "https://api.observablehq.com/d/2f691757ac83a209@1324.js?v=3";
 import bubble from "https://api.observablehq.com/d/591ec25efcb5dcd5@588.js?v=3";
 import bubble1 from "https://api.observablehq.com/d/44fd2fbbc5f2d780@552.js?v=3";
-import barchart from "https://api.observablehq.com/d/72ed590acb359427@148.js?v=3";
+import barchart from "https://api.observablehq.com/d/72ed590acb359427@168.js?v=3";
 
 const main = new Runtime().module(notebook, (name) => {
     switch (name) {

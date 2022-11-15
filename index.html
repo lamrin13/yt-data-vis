@@ -6,31 +6,14 @@
     <script type="module" src="app.js"></script>
     <script type="module" src="comparator-app.js"></script>
     <script type="module" src="radarChart.js"></script>
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/intro.js/minified/introjs.min.css"
+    />
   </head>
   <body>
-    
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="container">
-          <div id="observablehq-chart1-935c21d9" class="charts"></div>
-          <!-- <div id="bubble1" ></div> -->
-          <div id="bubble" class="charts"></div>
-        </div>
-        <div class="container1">
-          <div id="flowerroot" class="charts"></div>
-          <div id="barplot"></div>
-        </div>
-      </div>
-      <div class="mySlides fade">
-        <div class="container">
-          <div id="my_dataviz"></div>
-          <div class="radarChart"></div>
-        </div>
-        <div class="contianer1">
-          <div id="bubble1" class="charts"></div>
-        </div>
-      </div>
-      <defs
+    <defs
       ><marker
         id="#arrowhead-right"
         refX="5"
@@ -58,12 +41,95 @@
           fill="none"
         ></path></marker
     ></defs>
+    <defs
+      ><marker
+        id="arrowhead-stack-up"
+        refX="5"
+        refY="4"
+        markerWidth="16"
+        markerHeight="13"
+        ><path
+          d="M 10 10 L 5 5 L 0 10"
+          stroke="black"
+          stroke-width="1"
+          fill="none"
+        ></path></marker
+    ></defs>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="container">
+          <div id="observablehq-chart1-935c21d9" class="charts"></div>
+          <!-- <div id="bubble1" ></div> -->
+          <div id="bubble" class="charts"></div>
+        </div>
+        <div class="container1">
+          <div id="flowerroot" class="charts"></div>
+          <div id="barplot"></div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="container">
+          <div id="my_dataviz"></div>
+          <div class="radarChart"></div>
+        </div>
+        <div class="contianer1">
+          <div id="bubble1" class="charts"></div>
+        </div>
+      </div>
+
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <script type="module">
       import { plusSlides } from "./app.js";
       window.plusSlides = plusSlides;
+
+      introJs()
+        .setOptions({
+          // tooltipClass: "customTooltip",
+          showBullets: false,
+          steps: [
+            {
+              title: "Welcome to TrendWatch!",
+              intro: `Want to analyze trends on the YouTube? Confused deciding which region
+              and category will go viral? Trouble deciding keywords in title? Ideal day
+              to upload the video? You've come to the right place, click on next to get tour of the TrendWatch.`,
+            },
+            {
+              title: "TreeMap - The Filter",
+              element: document.querySelector("#observablehq-chart1-935c21d9"),
+              intro: `Click on the rectangles to see view count for categories and channels.<br/>
+                      Click on the title-bar to go back.<br/>
+                      This section also act as the filter for all the other sections.`,
+            },
+            {
+              title: "Flower of Emotions",
+              element: document.querySelector("#flowerroot"),
+              intro: `This flower-plot shows sentiment analysis of video titles.<br/>
+                      Hover over the petals to see the emotion score out of 5.`,
+            },
+            {
+              title: "Frequently Used Words",
+              element: document.querySelector("#barplot"),
+              intro: `This bar graph shoows the most-frequent keywords used in video titles.<br>
+                      Hover over bar to see the exact word count. `,
+            },
+            {
+              title: "Ideal day to Upload Video",
+              element: document.querySelector("#bubble"),
+              intro: `This bubble-chart shows the relation between day of week and average like per view ratio<br/>
+                      The size of the bubble shows average number of comments. <br/>
+                      Hover over bubble to see exact like/view and comment count.`,
+            },
+            {
+              title: "Channel Comparator",
+              element: document.querySelector(".next"),
+              intro: `Want to compare performance of multiple channels? <br/>
+                      Click on this button!`,
+            },
+          ],
+        })
+        .start();
     </script>
   </body>
 </html>

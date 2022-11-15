@@ -34,6 +34,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
     .domain(d3.extent(data, function (d) { return d.year; }))
     .range([0, width]);
   svg.append("g")
+    .attr("class", 'stack-xaxis')
     .attr("transform", `translate(0, ${height})`)
     .call(d3.axisBottom(x).ticks(5));
 
@@ -42,7 +43,15 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
     .domain([0, d3.max(data, function (d) { return +d.n; }) * 1.2])
     .range([height, 0]);
   svg.append("g")
+    .attr("id", "stack-yaxis")
     .call(d3.axisLeft(y));
+
+    svg.select("#stack-xaxis path.domain")
+    .attr("marker-end","url(#arrowhead-right)")
+  
+
+svg.select("#stack-yaxis path.domain")
+  .attr("marker-end","url(#arrowhead-stack-up)")
 
   // color palette
   const color = d3.scaleOrdinal()
