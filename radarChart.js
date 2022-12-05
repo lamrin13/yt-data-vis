@@ -1,16 +1,16 @@
-import { highlightStack } from './comparator-app.js'
-function RadarChart(id, data, options) {
+import { highlightBubble, highlightStack } from './comparator-app.js'
+export function RadarChart(id, data, options) {
     var cfg = {
         w: 600,
         h: 600,
-        margin: { top: 20, right: 20, bottom: 20, left: 20 },
+        margin: { top: 10, right: 20, bottom: 30, left: 20 },
         levels: 3,
         maxValue: 0,
-        labelFactor: 1.12,
+        labelFactor: 1.2,
         wrapWidth: 60,
-        opacityArea: 0.35,
+        opacityArea: 0.5,
         dotRadius: 2,
-        opacityCircles: 0.1,
+        opacityCircles: 0.09,
         strokeWidth: 2,
         roundStrokes: false,
         color: d3.scaleOrdinal(d3.schemeCategory10)
@@ -87,7 +87,7 @@ function RadarChart(id, data, options) {
         .attr("y2", function (d, i) { return rScale(maxValue * 1.1) * Math.sin(angleSlice * i - Math.PI / 2); })
         .attr("class", "line")
         .style("stroke", "white")
-        .style("stroke-width", "2px");
+        .style("stroke-width", "1px");
 
 
     axis.append("text")
@@ -130,6 +130,7 @@ function RadarChart(id, data, options) {
                 .transition().duration(200)
                 .style("fill-opacity", 0.7);
             highlightStack(this.className.baseVal.split(" ")[1]);
+            highlightBubble(this.className.baseVal.split(" ")[1]);
         })
         .on('mouseout', function () {
             let stack = document.getElementsByClassName("stack");
@@ -139,6 +140,10 @@ function RadarChart(id, data, options) {
             d3.selectAll(".radarArea")
                 .transition().duration(200)
                 .style("fill-opacity", cfg.opacityArea);
+            let bubble = document.getElementsByClassName("bubbles");
+            for (let i = 0; i < bubble.length; i++) {
+                bubble[i].style["fill-opacity"] = 0.7;
+            }
         });
 
     blobWrapper.append("path")
@@ -224,72 +229,36 @@ function RadarChart(id, data, options) {
 //   width,
 //   window.innerHeight - margin.top - margin.bottom - 20
 // );
-const margin = { top: 10, right: 60, bottom: 10, left: 60 },
-    width = 460 - margin.left - margin.right,
+let margin = { top: 10, right: 60, bottom: 10, left: 60 },
+    width = 450 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
-var data = [
-    [
-        //iPhone
-        { axis: "Anticipation", value: 0.22 },
-        { axis: "Sadness", value: 0.22 },
 
-        { axis: "Disgust", value: 0.5 },
-        { axis: "Joy", value: 0.28 },
-        { axis: "Fear", value: 0.51 },
-        { axis: "Surprise", value: 0.21 },
-        { axis: "Negative", value: 0.17 },
-        { axis: "Positive", value: 0.02 },
-        { axis: "Trust", value: 0.5 },
-        { axis: "Anger", value: 0.29 },
+function myFunction(x) {
+    if (x.matches) {
+        width = 350 - margin.left - margin.right,
+        height = 320 - margin.top - margin.bottom;
+    }
+}
+var x = window.matchMedia("(max-width: 1680px)")
+myFunction(x);
 
-    ],
-    [
-        //iPhone
-        { axis: "Anticipation", value: 0.67 },
-        { axis: "Sadness", value: 0.42 },
-
-        { axis: "Disgust", value: 0.5 },
-        { axis: "Joy", value: 0.68 },
-        { axis: "Fear", value: 0.11 },
-        { axis: "Surprise", value: 0.71 },
-        { axis: "Negative", value: 0.17 },
-        { axis: "Positive", value: 0.02 },
-        { axis: "Trust", value: 0.4 },
-        { axis: "Anger", value: 0.5 },
-
-    ],
-
-    [
-        //iPhone
-        { axis: "Anticipation", value: 0.42 },
-        { axis: "Sadness", value: 0.62 },
-
-        { axis: "Disgust", value: 0.8 },
-        { axis: "Joy", value: 0.38 },
-        { axis: "Fear", value: 0.2 },
-        { axis: "Surprise", value: 0.11 },
-        { axis: "Negative", value: 0.7 },
-        { axis: "Positive", value: 0.32 },
-        { axis: "Trust", value: 0.5 },
-        { axis: "Anger", value: 0.29 },
-
-    ],
-
-];
-
+var data = await fetch("radar_data.json").then(resp => {
+    return resp.json();
+});
 var color = d3.scaleOrdinal().range(["#EDC951", "#CC333F", "#00A0B0"]);
 
-var radarChartOptions = {
+export var radarChartOptions = {
     w: width,
     h: height,
     margin: margin,
-    maxValue: 0.5,
+    maxValue: 0.1,
     levels: 5,
     roundStrokes: true,
     color: color,
 };
 //Call function to draw the Radar chart
 RadarChart(".radarChart", data, radarChartOptions);
+
 
 export function highlightRadar(color) {
     let radar = document.getElementsByClassName("radarArea");

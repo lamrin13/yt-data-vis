@@ -1,6 +1,9 @@
 body{
-    background-color: rgb(255, 255, 255);
     overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: var(--body-bg);
 }
 
 .bar {
@@ -30,26 +33,26 @@ body{
     grid-template-columns: 1fr 1fr;
     column-gap: 15px;
     overflow-y: hidden;
+    z-index: 1;
 }
 
 .container1{
+    position: relative;
     overflow-y: hidden;
-    height: 90%;
+    height: 50%;
+    z-index: 2;
 }
 #flowerroot{
     float: left;
     width: 49%;
 }
-#barplot{
-    float: left;
-    width: 49%;
-}
+
 .arrow{
     float:right;
     align-self: center;
 }
 .charts{
-    background-color: white;
+    background-color: var(--body-bg);
 }
 
 .charts:first-child {
@@ -60,7 +63,7 @@ body{
     width: 180%;
     height: 100%;
     overflow-x: hidden;
-    /* background-color: aliceblue; */
+    /* background: var(--body-bg); */
 }
 #myviz1{
     width: 180%;
@@ -75,41 +78,96 @@ body{
 .myYaxis .tick:last-child{
     opacity: 0;
 }
-#bubble{
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+/* #stack-xaxis .tick:last-child{
+  opacity: 0 !important;
+  display: none;
+} */
+/* #stack-yaxis .tick:last-child{
+  opacity: 0;
+} */
 #bubble1{
     overflow-x: hidden;
     overflow-y: hidden;
     width: 45%;
 }
-.bubbles:hover {
+#bubble .bubbles{
+  fill: var(--bubble-bg) !important;
+  fill-opacity: var(--fill-opa) !important;
+  stroke: var(--bubble-bg) !important;
+}
+#bubble1 .bubbles{
+  fill-opacity: 0.7;
+  /* stroke: var(--bubble-bg) !important; */
+}
+#bubble .bubbles:hover {
     stroke-width: 5;
     transition: stroke-width 1s;
+    fill-opacity: var(--hover-opa) !important;
 }
 
 /* .x{
     font-size: 18;
 } */
-
-
+.bars{
+  fill: var(--bubble-bg) !important;
+  stroke: var(--bubble-bg) !important;
+  fill-opacity: var(--fill-opa) !important;
+}
+text{
+  fill: var(--axis-col) !important;
+}
+#tree-container text{
+  fill: black !important;
+}
+.x.label, .y.label{
+  fill: var(--label-col) !important;
+}
+.domain, path{
+  stroke: var(--axis-col);
+}
+.tick, .label{
+  color: var(--axis-col) !important;
+}
 .bars:hover{
-    stroke-width: 5;
+    stroke-width: 5 !important;
     transition: stroke-width 1s;
+    fill-opacity: var(--hover-opa) !important;
+}
+.petals path{
+  fill: var(--bubble-bg) !important;
+  fill-opacity: var(--fill-opa) !important;
+  stroke: var(--bubble-bg) !important;
+}
+
+.petals path:hover{
+  fill-opacity: var(--hover-opa) !important;
+}
+
+#flowerplot circle, #flowerplot line{
+  stroke: var(--circel-col) !important;
+  opacity: var(--circle-opa);
+  stroke-width: var(--circle-stroke-w) !important;
 }
 #flowerplot{
-    width: 180%;
+    width: 80%;
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding-left: 20%;
+    margin-top: -30px;
     /* background-color: aliceblue; */
 } 
 
 @media (max-width: 1680px) {
     #flowerplot{
-        width: 140%;
+        width: 80%;
+    }
+
+    .container1{
+      margin-top: -25px;
+    }
+
+    #my_dataviz{
+      width: 70%;
     }
 }
 
@@ -123,13 +181,14 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     margin: auto;
   }
-  
+
   /* Hide the images by default */
   .mySlides {
     display: none;
+    margin: 1px;
   }
   
   /* Next & previous buttons */
@@ -147,8 +206,21 @@ body{
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: rgba(214, 212, 212, 0.8);
+    z-index: 300000000;
+    overflow: auto;
   }
-  
+  #header1, #header2{
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 22px;
+    padding-left: 5px;
+    margin-top: 12px;
+  }
+  .page-title{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: bold;
+  }
   /* Position the "next button" to the right */
   .next {
     right: 0;
@@ -185,7 +257,9 @@ body{
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     border-radius: 2px;
-    pointer-events: none;
+    pointer-events: none !important;
+    z-index: 1000;
+    margin: 0;
   }
   
   /* Creates a small triangle extender for the tooltip */
@@ -209,13 +283,6 @@ body{
     text-align: center;
   }
   
-  /* Eastward tooltips */
-  .d3-tip.e:after {
-    content: "\25C0";
-    margin: -4px 0 0 0;
-    top: 50%;
-    left: -8px;
-  }
   
   /* Southward tooltips */
   .d3-tip.s:after {
@@ -226,13 +293,6 @@ body{
     text-align: center;
   }
   
-  /* Westward tooltips */
-  .d3-tip.w:after {
-    content: "\25B6";
-    margin: -4px 0 0 -1px;
-    top: 50%;
-    left: 100%;
-  }
 
   .customTooltip * {
     width: 500px;
@@ -247,3 +307,591 @@ body{
     max-width: 750px !important;
     width: 550px;
     }
+
+/*Menu CSS*/
+
+#navi{
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+.stack{
+  stroke: var(--axis-col) !important;
+  fill-opacity: var(--circle-opa);
+}
+.topnav {
+  background-color: var(--nav-bg) ;
+  width: 100%;
+  height: 4.5vh;
+}
+.topnav a {
+  /* float: left; */
+  /* display: block; */
+  height: 100%;
+  color: var(--nav-text);
+  text-align: center;
+  padding-top: 17px;
+  /* padding-bottom: 9px; */
+  padding-left: 14px;
+  padding-right: 14px;
+  text-decoration: none;
+  font-size: 16px;
+  height: 3vh;
+  margin-right:1px;
+  box-sizing:border-box;
+}
+
+#toggle-theme{
+  text-align: center;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-decoration: none;
+  font-size: 16px;
+  height: 4.5vh;
+  margin-right:1px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  float: right;
+  margin: 0 !important;
+}
+.new-container{
+  width:100%;
+  /* text-align: center; */
+}
+#tree-container{
+    width: 50%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 2px;
+    position: absolute;
+    background: --var(--body-bg);
+    margin-left: 5px;
+}
+#tree-filters{
+    width: 10%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 2px;
+    position: absolute;
+    left: 50%;
+    /* background: red; */
+    margin-left: 5px;
+}
+#bubble{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 40%;
+  height: auto;
+  position: relative;
+  float: right;
+  /* padding-top: 2%; */
+  margin-left: 5%;
+  z-index: 1;
+}
+.flower-title{
+  position: absolute;
+  font-size: 11px;
+  top: 50%;
+  right: 5%;
+  /* font-weight: bold; */
+  color: var(--title-col);
+  margin-top: 1%;
+}
+.flower-container{
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  padding-top: 3%;
+  z-index: 2;
+}
+#barplot{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 4;
+  width: 65%;
+  /* height: 30% !important; */
+  position: absolute;
+  top: 65%;
+  left: 0;
+  /* padding-top: 1%;*/
+  margin-top : 5%;
+  margin-left: 5px;
+}
+.bar-title{
+  width: 100%;
+  /* height: 30% !important; */
+  position: absolute;
+  top: 65%;
+  left: 12%;
+  /* padding-top: 1%;*/
+  margin-top : 4%;
+  color: var(--title-col);
+  font-size: 12px;
+  /* text-decoration: underline solid; */
+  /* font-weight: bold; */
+}
+.bubble-title{
+  font-size: 12px;
+  color: var(--title-col);
+  /* text-decoration: underline solid; */
+  float: right;
+  margin-right: 5%;
+  /* font-weight: bold; */
+}
+.radar-title{
+  font-size: 12px;
+  color: var(--title-col);
+  float: right;
+  top: 50%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.b1-title{
+  font-size: 12px;
+  color: var(--title-col);
+  float: right;
+  margin-right: 5%;
+}
+.tree-title{
+  font-size: 12px;
+  color: var(--title-col);
+  /* text-decoration: ; */
+  margin-left: 7%;
+  /* font-weight: bold; */
+}
+.st-title{
+  font-size: 12px;
+  color: var(--title-col);
+  margin-left: 15%;
+}
+#barviz{
+  height: 90%;
+}
+
+#my_dataviz{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: auto;
+  position: relative;
+  white-space: nowrap;
+  padding-bottom: 10%;
+  /* display: inline-block; */
+}
+#legend{
+  /* background: red; */
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  width: 20%;
+  height: auto;
+  color: var(--text-color);
+}
+.square {
+  height: 20px;
+  width: 20px;
+  /* background-color: #555; */
+  display: inline-block
+}
+.radarChart{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: auto;
+  position: relative;
+  white-space: nowrap;
+  /* padding-top: 5%; */
+  padding-left: 20%;
+}
+#bubble1{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 90%;
+  height: auto;
+  margin-left: 10%;
+  position: relative;
+  white-space: nowrap;
+}
+.main-graph{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 65%;
+  /* height: 100%; */
+  position: absolute;
+  /* display: inline-block; */
+  float: left;
+}
+.sub-graphs{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 35%;
+  height: auto;
+  position: absolute;
+  right: 5%;
+  /* margin-top: 5%; */
+  
+}
+#ibutton-st {
+  line-height: 18px;
+  width: 18px;
+  margin-top: 4%;
+  margin-right: 15%;
+  position:absolute;
+  top:0;
+  right:0;
+  border-radius: 50%;
+  font-style: italic;
+  color: white;
+  background: rgb(0, 0, 0);
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+  display: inline;
+}
+#ibutton-b1 {
+  line-height: 18px;
+  width: 18px;
+  margin-top: 4%;
+  margin-right: 1%;
+  position:absolute;
+  top:0;
+  right:0;
+  border-radius: 50%;
+  font-style: italic;
+  color: white;
+  background: black;
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+  display: inline;
+}
+#ibutton-r{
+  line-height: 18px;
+  width: 18px;
+  margin-top: 4%;
+  margin-right: 1%;
+  position:absolute;
+  top:45%;
+  right:0;
+  border-radius: 50%;
+  font-style: italic;
+  color: white;
+  background: black;
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+  display: inline;
+}
+#ibutton-t{
+  line-height: 18px;
+  width: 18px;
+  margin-top: 2.5%;
+  margin-right: 23%;
+  position:absolute;
+  top: 0;
+  right:0;
+  border-radius: 50%;
+  font-style: italic;
+  color: white;
+  background: black;
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+  display: inline;
+}
+#ibutton-b{
+  line-height: 18px;
+  width: 18px;
+  margin-top: 2.5%;
+  margin-right: 23%;
+  position:absolute;
+  top: 50%;
+  right:40%;
+  border-radius: 50%;
+  font-style: italic;
+  color: white;
+  background: black;
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+  display: inline;
+  z-index: 1000;
+}
+#ibutton-f{
+  line-height: 18px;
+  width: 18px;
+  margin-top: 2.5%;
+  margin-right: 23%;
+  position:absolute;
+  top: 50%;
+  right:18%;
+  border-radius: 50%;
+  font-style: italic;
+  color: white;
+  background: black;
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+  display: inline;
+  z-index: 1000;
+}
+#ibutton-w{
+  line-height: 18px;
+  width: 18px;
+  margin-top: 3%;
+  margin-right: 4%;
+  position:absolute;
+  top: 50%;
+  right:1%;
+  border-radius: 50%;
+  font-style: italic;
+  color: white;
+  background: black;
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+  display: inline;
+  z-index: 1000;
+}
+.light_mode{
+  --body-bg: rgb(245, 245,245);
+  --nav-bg: rgb(192, 191, 191);;
+  --nav-hover: rgb(203, 199, 199);
+  --nav-text: rgb(0, 0, 0);
+  --card-bg: #e0e0e0;
+  --card-bd-col: #bdbdbd;
+  --text-color:#252525;
+  --bubble-bg: #3377ff;
+  --axis-col: black;
+  --label-col: black;
+  --circel-col: rgb(220, 220, 220);
+  --circle-opa: 1;
+  --circle-stroke-w: 1;
+  --fill-opa: 0.3;
+  --hover-opa: 0.5;
+  --root-col: rgb(46, 166, 196);
+  --child-col: rgb(121, 184, 200);
+  --leaf-col: rgb(164, 214, 226);
+  --title-col: black;
+}
+:root{
+  --body-bg: linear-gradient(rgb(129, 129, 129), rgb(29, 29, 29));
+  --nav-bg: rgb(129, 129, 129);
+  --nav-hover: rgb(40, 40, 40);
+  --nav-text: white;
+  --card-bg: #555;
+  --card-bd-col: #212121;
+  --text-color:#f5f5f5;
+  --bubble-bg: rgb(92, 174, 194);
+  --axis-col: white;
+  --label-col: rgb(92, 174, 194);
+  --circel-col: rgb(180, 180, 180);
+  --circle-opa: 0.7;
+  --circle-stroke-w: 0.4;
+  --fill-opa: 0.8;
+  --hover-opa: 0.8;
+  --root-col: rgb(46, 166, 196);
+  --child-col: rgb(121, 184, 200);
+  --leaf-col: rgb(164, 214, 226);
+  --title-col: rgb(196, 196, 196);
+} 
+
+
+/* Loading Animation*/
+.loader1 {
+  float: left;
+  clear: left;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 4px solid #FFF;
+  top: 50%;
+  left: 50%;
+  animation: loader 2s infinite ease;
+}
+.loader1-text {
+  float: left;
+  clear: left;
+  display: inline;
+  width: 350px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  left: 45%;
+  color: white;
+  font-size: x-large;
+}
+
+.loader1-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #FFF;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
+#overlay, #overlay1 {
+  position: fixed; 
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.75); /* Black background with opacity */
+  z-index: 99999; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#visulization, #visulization1{
+  padding-block: 5% 5%;
+  padding-left: 5%;
+  height: auto;
+}
+#c1, #c2, #c3{
+  /* display: inline-block; */
+  float: left;
+  width: 20px;
+  margin: 20px;
+}
+/* Pop ups*/
+.modal {
+  position: fixed;
+  width: 150vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  top: 0;
+  left: -10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000000;
+  padding-right: 40%;
+  /* padding-bottom: 30%; */
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.modal-bg {
+  position: absolute;
+  background: rgb(173, 174, 174);
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+.modal-container {
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  padding: 30px;
+  width: 40%;
+  height: 35%;
+}
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  outline: none;
+  appearance: none;
+  color: rgb(7, 7, 7);
+  background: none;
+  border: 0px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#update{
+  background: #3a6df0;
+  /* border: 2px; */
+  outline: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 45%;
+  color: white;
+  margin-top: 5%;
+}
+#channelData{
+  background: #3a6df0;
+  /* border: 2px; */
+  outline: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 45%;
+  color: white;
+  margin-top: 5%;
+}
+#live{
+  background: #2b67ff;
+  outline: none;
+  border: none;
+  position: relative;
+  margin-left: 15%;
+  margin-top: 5%;
+  color: var(--text-color)
+}
+#channel-button{
+  background: #2b67ff;
+  outline: none;
+  border: none;
+  position: relative;
+  margin-left: 50%;
+  margin-top: 2%;
+  color: var(--text-color)
+}
+select{
+  width: 100%;
+}
+ 

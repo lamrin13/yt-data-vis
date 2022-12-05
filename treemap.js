@@ -14,10 +14,14 @@ function _1(md){return(
       const svg = d3
         .create("svg")
         .attr("viewBox", [0.5, -30.5, width, height + 30])
-        .style("font", "20px sans-serif");
+        .style("font", "22px sans-serif");
     
       let group = svg.append("g").call(render, treemap(data));
-    
+      var filter = group.selectAll("g").append('defs').append('filter').attr('id', 'glow'),
+      feGaussianBlur = filter.append('feGaussianBlur').attr('stdDeviation', '2.5').attr('result', 'coloredBlur'),
+      feMerge = filter.append('feMerge'),
+      feMergeNode_1 = feMerge.append('feMergeNode').attr('in', 'coloredBlur'),
+      feMergeNode_2 = feMerge.append('feMergeNode').attr('in', 'SourceGraphic');
       function render(group, root) {
         const node = group
           .selectAll("g")
@@ -29,13 +33,15 @@ function _1(md){return(
           .attr("cursor", "pointer")
           .on("click", (event, d) => (d === root ? zoomout(root) : zoomin(d)));
     
-        node.append("title").text((d) => `${name(d)}`);
+        node.append("title").text((d) => `${name(d).split("/")[name(d).split("/").length-1]}: ${d.value}`);
     
         node
           .append("rect")
           .attr("id", (d) => (d.leafUid = DOM.uid("leaf")).id)
-          .attr("fill", (d) => (d === root ? "#4d88ff" : d.children ? "#b3ccff" : "#ccddff"))
+          .attr("class", (d) => (d === root ? "root-rect" : d.children ? "child-rect" : "leaf-rect"))
+          .attr("fill", (d) => (d === root ? "#0c7994" : d.children ? "#5caec2" : "#81b9c7"))
           .attr("stroke", "#fff");
+          // .style("filter", "url(#glow)");
     
         node
           .append("clipPath")
@@ -48,6 +54,7 @@ function _1(md){return(
     
           .attr("clip-path", (d) => d.clipUid)
           .attr("font-weight", (d) => (d === root ? "bold" : null))
+          .attr("font-size", "28px")
           .selectAll("tspan")
           .data((d) =>
             (d === root ? name(d) : d.data.name)
@@ -83,7 +90,25 @@ function _1(md){return(
           )
           .select("rect")
           .attr("width", (d) => (d === root ? width : x(d.x1) - x(d.x0)))
-          .attr("height", (d) => (d === root ? 30 : y(d.y1) - y(d.y0)));
+          .attr("height", (d) => (d === root ? 40 : y(d.y1) - y(d.y0)))
+          // .attr("opacity", (d) => {
+          //   if(d===root)  return 1;
+          //   else{
+          //     console.log("opacity ",((x(d.x1) - x(d.x0))*(y(d.y1) - y(d.y0)))/(width*height) + 0.5)
+          //     //  return ((x(d.x1) - x(d.x0))*(y(d.y1) - y(d.y0)))/(width*height) + 0.2;
+          //     return 1;
+          //   }
+          // })
+          .attr("fill", (d,i) => {
+            if(d===root)  return "#4390a3";
+            else{
+              if(i==0) return "#6eb3c4";
+              else if(i==1) return "#80bccb";
+              else if(i==2) return "#92c6d3";
+              else if(i==3) return "#a4cfda";
+              else return "#b7d9e1";
+            }
+          });
       }
     
       // When zooming in, draw the new nodes on top, and fade them in.
@@ -171,11 +196,11 @@ function _1(md){return(
     )}
     
     function _width(){return(
-    954
+    1250
     )}
     
     function _height(){return(
-    400
+    700
     )}
     
     function _format(d3){return(

@@ -1,0 +1,128 @@
+[
+    {
+        "x": "Monday",
+        "name": "GMHikaru",
+        "y": 0.38,
+        "r": 47
+    },
+    {
+        "x": "Tuesday",
+        "name": "GMHikaru",
+        "y": 0.38,
+        "r": 58
+    },
+    {
+        "x": "Wednesday",
+        "name": "GMHikaru",
+        "y": 0.39,
+        "r": 48
+    },
+    {
+        "x": "Thursday",
+        "name": "GMHikaru",
+        "y": 0.38,
+        "r": 36
+    },
+    {
+        "x": "Friday",
+        "name": "GMHikaru",
+        "y": 0.39,
+        "r": 34
+    },
+    {
+        "x": "Saturday",
+        "name": "GMHikaru",
+        "y": 0.36,
+        "r": 32
+    },
+    {
+        "x": "Sunday",
+        "name": "GMHikaru",
+        "y": 0.37,
+        "r": 34
+    },
+    {
+        "x": "Monday",
+        "name": "GothamChess",
+        "y": 0.64,
+        "r": 195
+    },
+    {
+        "x": "Tuesday",
+        "name": "GothamChess",
+        "y": 0.65,
+        "r": 226
+    },
+    {
+        "x": "Wednesday",
+        "name": "GothamChess",
+        "y": 0.55,
+        "r": 160
+    },
+    {
+        "x": "Thursday",
+        "name": "GothamChess",
+        "y": 0.55,
+        "r": 204
+    },
+    {
+        "x": "Friday",
+        "name": "GothamChess",
+        "y": 0.6,
+        "r": 204
+    },
+    {
+        "x": "Saturday",
+        "name": "GothamChess",
+        "y": 0.56,
+        "r": 147
+    },
+    {
+        "x": "Sunday",
+        "name": "GothamChess",
+        "y": 0.59,
+        "r": 144
+    },
+    {
+        "x": "Monday",
+        "name": "agadmator's Chess Channel",
+        "y": 0.58,
+        "r": 58
+    },
+    {
+        "x": "Tuesday",
+        "name": "agadmator's Chess Channel",
+        "y": 0.51,
+        "r": 53
+    },
+    {
+        "x": "Wednesday",
+        "name": "agadmator's Chess Channel",
+        "y": 0.47,
+        "r": 62
+    },
+    {
+        "x": "Thursday",
+        "name": "agadmator's Chess Channel",
+        "y": 0.48,
+        "r": 66
+    },
+    {
+        "x": "Friday",
+        "name": "agadmator's Chess Channel",
+        "y": 0.56,
+        "r": 50
+    },
+    {
+        "x": "Saturday",
+        "name": "agadmator's Chess Channel",
+        "y": 0.5,
+        "r": 45
+    },
+    {
+        "x": "Sunday",
+        "name": "agadmator's Chess Channel",
+        "y": 0.46,
+        "r": 42
+    }
+]

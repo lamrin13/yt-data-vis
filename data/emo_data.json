@@ -1,0 +1,4466 @@
+{
+    "Popular-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.92,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.92
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.734054054054054,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.734054054054054
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.5535135135135136,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.5535135135135136
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2.055135135135135,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2.055135135135135
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.5102702702702704,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.5102702702702704
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.7124324324324327,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.7124324324324327
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.3502702702702702,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.3502702702702702
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.761081081081081,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.761081081081081
+                }
+            ]
+        }
+    ],
+    "Popular-words": [
+        {
+            "x": "Video",
+            "y": 95
+        },
+        {
+            "x": "Subscribe",
+            "y": 93
+        },
+        {
+            "x": "Music",
+            "y": 90
+        },
+        {
+            "x": "World Cup",
+            "y": 66
+        },
+        {
+            "x": "Bijli Bijli",
+            "y": 58
+        },
+        {
+            "x": "New",
+            "y": 56
+        },
+        {
+            "x": "Follow",
+            "y": 46
+        },
+        {
+            "x": "Instagram",
+            "y": 46
+        },
+        {
+            "x": "Youtube Channel",
+            "y": 45
+        },
+        {
+            "x": "Youtube",
+            "y": 43
+        }
+    ],
+    "Popular-Australia-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.989637305699482,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.989637305699482
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.6787564766839376,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.6787564766839376
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.455958549222798,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.455958549222798
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2.347150259067358,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2.347150259067358
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.621761658031088,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.621761658031088
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.6787564766839376,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.6787564766839376
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.4145077720207255,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.4145077720207255
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.766839378238342,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.766839378238342
+                }
+            ]
+        }
+    ],
+    "Popular-Australia-words": [
+        {
+            "x": "Video",
+            "y": 42
+        },
+        {
+            "x": "Subscribe",
+            "y": 27
+        },
+        {
+            "x": "Follow",
+            "y": 25
+        },
+        {
+            "x": "Channel",
+            "y": 19
+        },
+        {
+            "x": "World Cup",
+            "y": 19
+        },
+        {
+            "x": "Free",
+            "y": 18
+        },
+        {
+            "x": "Music",
+            "y": 18
+        },
+        {
+            "x": "Minecraft",
+            "y": 18
+        },
+        {
+            "x": "Twitter",
+            "y": 16
+        },
+        {
+            "x": "New",
+            "y": 16
+        }
+    ],
+    "Popular-Australia-Sports-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 3.1176470588235294,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 3.1176470588235294
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.411764705882353,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.411764705882353
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2.411764705882353,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2.411764705882353
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.7058823529411764,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.7058823529411764
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.6470588235294117,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.6470588235294117
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.9411764705882353,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.9411764705882353
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "Popular-Australia-Sports-words": [
+        {
+            "x": "World Cup",
+            "y": 17
+        },
+        {
+            "x": "Fifa World",
+            "y": 11
+        },
+        {
+            "x": "Highlights",
+            "y": 9
+        },
+        {
+            "x": "Live",
+            "y": 9
+        },
+        {
+            "x": "Stream",
+            "y": 7
+        },
+        {
+            "x": "Group",
+            "y": 6
+        },
+        {
+            "x": "Watch",
+            "y": 6
+        },
+        {
+            "x": "Sbs",
+            "y": 6
+        },
+        {
+            "x": "Minute Minute",
+            "y": 6
+        },
+        {
+            "x": "Use",
+            "y": 5
+        }
+    ],
+    "Popular-Australia-Music-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.257142857142857,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.257142857142857
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.942857142857143,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.942857142857143
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.457142857142857,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.457142857142857
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.5714285714285714,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.5714285714285714
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.342857142857143,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.342857142857143
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.257142857142857,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.257142857142857
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.1142857142857143,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.1142857142857143
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 2.257142857142857,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 2.257142857142857
+                }
+            ]
+        }
+    ],
+    "Popular-Australia-Music-words": [
+        {
+            "x": "Music",
+            "y": 10
+        },
+        {
+            "x": "Video",
+            "y": 7
+        },
+        {
+            "x": "Rammstein",
+            "y": 5
+        },
+        {
+            "x": "Adieu",
+            "y": 5
+        },
+        {
+            "x": "Karan Aujla",
+            "y": 5
+        },
+        {
+            "x": "New",
+            "y": 4
+        },
+        {
+            "x": "Produced",
+            "y": 4
+        },
+        {
+            "x": "Pnk",
+            "y": 4
+        },
+        {
+            "x": "Official",
+            "y": 4
+        },
+        {
+            "x": "Lisi",
+            "y": 4
+        }
+    ],
+    "Popular-Australia-Gaming-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.5384615384615383,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.5384615384615383
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.076923076923077,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.076923076923077
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.4615384615384617,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.4615384615384617
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 4.384615384615385,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 4.384615384615385
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.7692307692307692,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.7692307692307692
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.3846153846153846,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.3846153846153846
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.1538461538461537,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.1538461538461537
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 2.3846153846153846,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 2.3846153846153846
+                }
+            ]
+        }
+    ],
+    "Popular-Australia-Gaming-words": [
+        {
+            "x": "Minecraft",
+            "y": 22
+        },
+        {
+            "x": "Video",
+            "y": 12
+        },
+        {
+            "x": "Twitter",
+            "y": 11
+        },
+        {
+            "x": "Pokemon",
+            "y": 9
+        },
+        {
+            "x": "Day Day",
+            "y": 9
+        },
+        {
+            "x": "Vault Hunters",
+            "y": 7
+        },
+        {
+            "x": "Follow",
+            "y": 6
+        },
+        {
+            "x": "Smp",
+            "y": 6
+        },
+        {
+            "x": "One",
+            "y": 6
+        },
+        {
+            "x": "Gameplay",
+            "y": 6
+        }
+    ],
+    "Popular-Australia-Science & Technology-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.142857142857143,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.142857142857143
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.4285714285714284,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.4285714285714284
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.5714285714285714,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.5714285714285714
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.142857142857143,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.142857142857143
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.2857142857142856,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.2857142857142856
+                }
+            ]
+        }
+    ],
+    "Popular-Australia-Science & Technology-words": [
+        {
+            "x": "Prize",
+            "y": 4
+        },
+        {
+            "x": "Month",
+            "y": 3
+        },
+        {
+            "x": "Crunchlabs",
+            "y": 2
+        },
+        {
+            "x": "Build",
+            "y": 2
+        },
+        {
+            "x": "Free",
+            "y": 2
+        },
+        {
+            "x": "Video",
+            "y": 2
+        },
+        {
+            "x": "Detail",
+            "y": 2
+        },
+        {
+            "x": "Promotion",
+            "y": 2
+        },
+        {
+            "x": "Monthly",
+            "y": 2
+        },
+        {
+            "x": "Entry",
+            "y": 2
+        }
+    ],
+    "Popular-Australia-Entertainment-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 4.222222222222221,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 4.222222222222221
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 3.5555555555555554,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 3.5555555555555554
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.6666666666666665,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.6666666666666665
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2.2222222222222223,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2.2222222222222223
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.7777777777777777,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.7777777777777777
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.111111111111111,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.111111111111111
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.6666666666666665,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.6666666666666665
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 2.333333333333333,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 2.333333333333333
+                }
+            ]
+        }
+    ],
+    "Popular-Australia-Entertainment-words": [
+        {
+            "x": "Subscribe",
+            "y": 14
+        },
+        {
+            "x": "Twitter",
+            "y": 8
+        },
+        {
+            "x": "Wednesday",
+            "y": 7
+        },
+        {
+            "x": "Instagram",
+            "y": 6
+        },
+        {
+            "x": "Use",
+            "y": 6
+        },
+        {
+            "x": "Mainstream Tracks",
+            "y": 6
+        },
+        {
+            "x": "Tracks License",
+            "y": 6
+        },
+        {
+            "x": "License Id",
+            "y": 6
+        },
+        {
+            "x": "Follow",
+            "y": 5
+        },
+        {
+            "x": "Youtube",
+            "y": 5
+        }
+    ],
+    "Popular-India-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.6575682382133996,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.6575682382133996
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.5384615384615383,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.5384615384615383
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.466501240694789,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.466501240694789
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.5359801488833746,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.5359801488833746
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.4069478908188586,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.4069478908188586
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.588089330024814,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.588089330024814
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.228287841191067,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.228287841191067
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.674937965260546,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.674937965260546
+                }
+            ]
+        }
+    ],
+    "Popular-India-words": [
+        {
+            "x": "Bijli Bijli",
+            "y": 58
+        },
+        {
+            "x": "Music",
+            "y": 57
+        },
+        {
+            "x": "Video",
+            "y": 33
+        },
+        {
+            "x": "Studio",
+            "y": 30
+        },
+        {
+            "x": "Song",
+            "y": 26
+        },
+        {
+            "x": "Movie",
+            "y": 26
+        },
+        {
+            "x": "Production",
+            "y": 24
+        },
+        {
+            "x": "Sound",
+            "y": 22
+        },
+        {
+            "x": "India",
+            "y": 21
+        },
+        {
+            "x": "Prince Pathania",
+            "y": 21
+        }
+    ],
+    "Popular-India-Music-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.2436974789915967,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.2436974789915967
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.815126050420168,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.815126050420168
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.3361344537815125,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.3361344537815125
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.403361344537815,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.403361344537815
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.1008403361344539,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.1008403361344539
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.277310924369748,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.277310924369748
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.26890756302521,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.26890756302521
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 2.2100840336134455,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 2.2100840336134455
+                }
+            ]
+        }
+    ],
+    "Popular-India-Music-words": [
+        {
+            "x": "Bijli Bijli",
+            "y": 58
+        },
+        {
+            "x": "Music",
+            "y": 28
+        },
+        {
+            "x": "Song",
+            "y": 15
+        },
+        {
+            "x": "Follow Us",
+            "y": 13
+        },
+        {
+            "x": "Studio",
+            "y": 11
+        },
+        {
+            "x": "Subscribe",
+            "y": 10
+        },
+        {
+            "x": "Video",
+            "y": 9
+        },
+        {
+            "x": "Lyric",
+            "y": 9
+        },
+        {
+            "x": "Reddy",
+            "y": 9
+        },
+        {
+            "x": "Folk",
+            "y": 9
+        }
+    ],
+    "Popular-India-Entertainment-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 3.3859649122807016,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 3.3859649122807016
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.719298245614035,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.719298245614035
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.8771929824561404,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.8771929824561404
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.456140350877193,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.456140350877193
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.6666666666666665,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.6666666666666665
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.9298245614035086,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.9298245614035086
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.2456140350877192,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.2456140350877192
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.280701754385965,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.280701754385965
+                }
+            ]
+        }
+    ],
+    "Popular-India-Entertainment-words": [
+        {
+            "x": "Prince Pathania",
+            "y": 21
+        },
+        {
+            "x": "Bhai",
+            "y": 18
+        },
+        {
+            "x": "Movie",
+            "y": 15
+        },
+        {
+            "x": "Watch",
+            "y": 14
+        },
+        {
+            "x": "Music",
+            "y": 10
+        },
+        {
+            "x": "Video",
+            "y": 10
+        },
+        {
+            "x": "Show",
+            "y": 9
+        },
+        {
+            "x": "Latest",
+            "y": 9
+        },
+        {
+            "x": "New",
+            "y": 8
+        },
+        {
+            "x": "Film",
+            "y": 8
+        }
+    ],
+    "Popular-India-Sports-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.754385964912281,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.754385964912281
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 1.7017543859649122,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 1.7017543859649122
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.1403508771929824,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.1403508771929824
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.9824561403508771,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.9824561403508771
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 2.4035087719298245,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 2.4035087719298245
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 1.631578947368421,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 1.631578947368421
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.1403508771929824,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.1403508771929824
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.4210526315789473,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.4210526315789473
+                }
+            ]
+        }
+    ],
+    "Popular-India-Sports-words": [
+        {
+            "x": "Prime Video",
+            "y": 19
+        },
+        {
+            "x": "Prime",
+            "y": 6
+        },
+        {
+            "x": "Movies",
+            "y": 6
+        },
+        {
+            "x": "One",
+            "y": 6
+        },
+        {
+            "x": "Included",
+            "y": 6
+        },
+        {
+            "x": "Available",
+            "y": 6
+        },
+        {
+            "x": "Fire",
+            "y": 6
+        },
+        {
+            "x": "Prime Members",
+            "y": 6
+        },
+        {
+            "x": "Amazon Original",
+            "y": 6
+        },
+        {
+            "x": "Watch",
+            "y": 5
+        }
+    ],
+    "Popular-India-People & Blogs-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.018181818181818,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.018181818181818
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.8909090909090907,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.8909090909090907
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.0727272727272728,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.0727272727272728
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.5818181818181818,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.5818181818181818
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.1454545454545455,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.1454545454545455
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.745454545454545,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.745454545454545
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.1454545454545455,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.1454545454545455
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.9454545454545453,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.9454545454545453
+                }
+            ]
+        }
+    ],
+    "Popular-India-People & Blogs-words": [
+        {
+            "x": "Music",
+            "y": 15
+        },
+        {
+            "x": "Team",
+            "y": 7
+        },
+        {
+            "x": "Assistant",
+            "y": 6
+        },
+        {
+            "x": "Video",
+            "y": 6
+        },
+        {
+            "x": "Song",
+            "y": 6
+        },
+        {
+            "x": "Production",
+            "y": 6
+        },
+        {
+            "x": "Channel",
+            "y": 5
+        },
+        {
+            "x": "Singh",
+            "y": 5
+        },
+        {
+            "x": "Styling",
+            "y": 5
+        },
+        {
+            "x": "Makeup",
+            "y": 5
+        }
+    ],
+    "Popular-India-Comedy-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 3.2,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 3.2
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 2.2,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 2.2
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.2,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.2
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 3.8000000000000003,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 3.8000000000000003
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.2,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.2
+                }
+            ]
+        }
+    ],
+    "Popular-India-Comedy-words": [
+        {
+            "x": "Team",
+            "y": 7
+        },
+        {
+            "x": "Train",
+            "y": 7
+        },
+        {
+            "x": "Elvish Yadav",
+            "y": 7
+        },
+        {
+            "x": "Sound",
+            "y": 5
+        },
+        {
+            "x": "Comedy",
+            "y": 4
+        },
+        {
+            "x": "Channel",
+            "y": 4
+        },
+        {
+            "x": "Studio",
+            "y": 4
+        },
+        {
+            "x": "Shah",
+            "y": 4
+        },
+        {
+            "x": "Dop",
+            "y": 3
+        },
+        {
+            "x": "Ahmed",
+            "y": 3
+        }
+    ],
+    "Popular-Japan-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.5882352941176467,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.5882352941176467
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 3.764705882352941,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 3.764705882352941
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 2.1176470588235294,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 2.1176470588235294
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2.7058823529411766,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2.7058823529411766
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.5294117647058822,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.5294117647058822
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 3.7058823529411766,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 3.7058823529411766
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.6470588235294117,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.6470588235294117
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 2.0588235294117645,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 2.0588235294117645
+                }
+            ]
+        }
+    ],
+    "Popular-Japan-words": [
+        {
+            "x": "Twitter",
+            "y": 26
+        },
+        {
+            "x": "Instagram",
+            "y": 18
+        },
+        {
+            "x": "Sat",
+            "y": 16
+        },
+        {
+            "x": "Official",
+            "y": 12
+        },
+        {
+            "x": "Match Game",
+            "y": 12
+        },
+        {
+            "x": "Ω Ω",
+            "y": 12
+        },
+        {
+            "x": "Sun",
+            "y": 11
+        },
+        {
+            "x": "Game Match",
+            "y": 11
+        },
+        {
+            "x": "Live",
+            "y": 7
+        },
+        {
+            "x": "Tiktok",
+            "y": 6
+        }
+    ],
+    "Popular-Japan-Entertainment-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.263157894736842,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.263157894736842
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1.2105263157894737,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1.2105263157894737
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 3.526315789473684,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 3.526315789473684
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.4210526315789473,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.4210526315789473
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2.894736842105263,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2.894736842105263
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.4210526315789473,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.4210526315789473
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 3.7368421052631575,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 3.7368421052631575
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.2105263157894737,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.2105263157894737
+                }
+            ]
+        }
+    ],
+    "Popular-Japan-Entertainment-words": [
+        {
+            "x": "Twitter",
+            "y": 11
+        },
+        {
+            "x": "Instagram",
+            "y": 7
+        },
+        {
+            "x": "축하공연",
+            "y": 6
+        },
+        {
+            "x": "청룡영화상",
+            "y": 6
+        },
+        {
+            "x": "チャンネル登録よろしくお願いします",
+            "y": 4
+        },
+        {
+            "x": "東海オンエア",
+            "y": 4
+        },
+        {
+            "x": "Holox Ch",
+            "y": 4
+        },
+        {
+            "x": "Holox",
+            "y": 3
+        },
+        {
+            "x": "Youtube",
+            "y": 3
+        },
+        {
+            "x": "Talents",
+            "y": 3
+        }
+    ],
+    "Popular-Japan-Sports-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 3,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "Popular-Japan-Sports-words": [
+        {
+            "x": "Fifa",
+            "y": 8
+        },
+        {
+            "x": "Abema",
+            "y": 6
+        },
+        {
+            "x": "ワールドカップ",
+            "y": 5
+        },
+        {
+            "x": "選手インタビュー",
+            "y": 4
+        },
+        {
+            "x": "ドラマCh",
+            "y": 4
+        },
+        {
+            "x": "詳細はこちら",
+            "y": 3
+        },
+        {
+            "x": "公式Twitter",
+            "y": 3
+        },
+        {
+            "x": "公式Instagram",
+            "y": 3
+        },
+        {
+            "x": "公式Facebook",
+            "y": 3
+        },
+        {
+            "x": "World Cup",
+            "y": 3
+        }
+    ],
+    "Popular-Japan-Music-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.333333333333333,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.333333333333333
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 4,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 4
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 2.2222222222222223,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 2.2222222222222223
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.6666666666666665,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.6666666666666665
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.2222222222222223,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.2222222222222223
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.8888888888888888,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.8888888888888888
+                }
+            ]
+        }
+    ],
+    "Popular-Japan-Music-words": [
+        {
+            "x": "Sat",
+            "y": 16
+        },
+        {
+            "x": "Sun",
+            "y": 11
+        },
+        {
+            "x": "Twitter",
+            "y": 6
+        },
+        {
+            "x": "Youtube Music",
+            "y": 6
+        },
+        {
+            "x": "星野源",
+            "y": 5
+        },
+        {
+            "x": "東京都",
+            "y": 5
+        },
+        {
+            "x": "Dome Tour",
+            "y": 5
+        },
+        {
+            "x": "Colonized Tour",
+            "y": 5
+        },
+        {
+            "x": "Tour 鳥取県立倉吉未来中心",
+            "y": 5
+        },
+        {
+            "x": "Dome",
+            "y": 4
+        }
+    ],
+    "Popular-Japan-Comedy-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 3,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 3,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 3
+                }
+            ]
+        }
+    ],
+    "Popular-Japan-Comedy-words": [
+        {
+            "x": "てっちゃん",
+            "y": 5
+        },
+        {
+            "x": "ともやん",
+            "y": 5
+        },
+        {
+            "x": "ぺろ愛男爵",
+            "y": 4
+        },
+        {
+            "x": "どば師匠 たかし",
+            "y": 4
+        },
+        {
+            "x": "どうも東海オンエアです",
+            "y": 3
+        },
+        {
+            "x": "ぜひチャンネル登録お願いします",
+            "y": 3
+        },
+        {
+            "x": "東海オンエアLine公式アカウント",
+            "y": 3
+        },
+        {
+            "x": "友達登録はこちらから",
+            "y": 3
+        },
+        {
+            "x": "サブチャンネル東海オンエアの控え室もぜひチャンネル登録してね",
+            "y": 3
+        },
+        {
+            "x": "グッズ購入はこちらから",
+            "y": 3
+        }
+    ],
+    "Popular-Japan-People & Blogs-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 1.4,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 1.4
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 1.8,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 1.8
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "Popular-Japan-People & Blogs-words": [
+        {
+            "x": "Official",
+            "y": 7
+        },
+        {
+            "x": "Instagram",
+            "y": 5
+        },
+        {
+            "x": "Twitter",
+            "y": 4
+        },
+        {
+            "x": "着用アイテム",
+            "y": 4
+        },
+        {
+            "x": "パンツ",
+            "y": 4
+        },
+        {
+            "x": "Gab",
+            "y": 3
+        },
+        {
+            "x": "Team",
+            "y": 3
+        },
+        {
+            "x": "Tiktok",
+            "y": 2
+        },
+        {
+            "x": "Youtube",
+            "y": 2
+        },
+        {
+            "x": "Skin",
+            "y": 2
+        }
+    ],
+    "Popular-Qatar-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.9661016949152543,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.9661016949152543
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.9661016949152543,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.9661016949152543
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.4745762711864407,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.4745762711864407
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.7457627118644068,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.7457627118644068
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.1355932203389831,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.1355932203389831
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.694915254237288,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.694915254237288
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.3389830508474576,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.3389830508474576
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.7457627118644068,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.7457627118644068
+                }
+            ]
+        }
+    ],
+    "Popular-Qatar-words": [
+        {
+            "x": "كأس العالم",
+            "y": 35
+        },
+        {
+            "x": "قطر",
+            "y": 32
+        },
+        {
+            "x": "World Cup",
+            "y": 28
+        },
+        {
+            "x": "على",
+            "y": 25
+        },
+        {
+            "x": "رابط",
+            "y": 23
+        },
+        {
+            "x": "Twitter",
+            "y": 18
+        },
+        {
+            "x": "Instagram",
+            "y": 17
+        },
+        {
+            "x": "حساب",
+            "y": 16
+        },
+        {
+            "x": "Qatar",
+            "y": 15
+        },
+        {
+            "x": "مباشر",
+            "y": 15
+        }
+    ],
+    "Popular-Qatar-Sports-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 4.294117647058823,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 4.294117647058823
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 3.588235294117647,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 3.588235294117647
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.2352941176470589,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.2352941176470589
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.9411764705882353,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.9411764705882353
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 3.1176470588235294,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 3.1176470588235294
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.7058823529411764,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.7058823529411764
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "Popular-Qatar-Sports-words": [
+        {
+            "x": "World Cup",
+            "y": 23
+        },
+        {
+            "x": "قطر",
+            "y": 20
+        },
+        {
+            "x": "Qatar",
+            "y": 15
+        },
+        {
+            "x": "Fifa",
+            "y": 14
+        },
+        {
+            "x": "كأس العالم",
+            "y": 13
+        },
+        {
+            "x": "Instagram",
+            "y": 12
+        },
+        {
+            "x": "Fifa World",
+            "y": 12
+        },
+        {
+            "x": "Fox Soccer",
+            "y": 10
+        },
+        {
+            "x": "Facebook",
+            "y": 9
+        },
+        {
+            "x": "Sport",
+            "y": 8
+        }
+    ],
+    "Popular-Qatar-Music-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.0666666666666664,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.0666666666666664
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1.5333333333333332,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1.5333333333333332
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 3.6666666666666665,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 3.6666666666666665
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.2666666666666666,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.2666666666666666
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1.5333333333333332,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1.5333333333333332
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.8666666666666667,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.8666666666666667
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 3.1333333333333333,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 3.1333333333333333
+                }
+            ]
+        }
+    ],
+    "Popular-Qatar-Music-words": [
+        {
+            "x": "هيا هيا",
+            "y": 9
+        },
+        {
+            "x": "Maher Zain",
+            "y": 7
+        },
+        {
+            "x": "Humood",
+            "y": 5
+        },
+        {
+            "x": "Awakening Music",
+            "y": 5
+        },
+        {
+            "x": "Tahayya",
+            "y": 4
+        },
+        {
+            "x": "Alkhudher",
+            "y": 4
+        },
+        {
+            "x": "Hayya",
+            "y": 4
+        },
+        {
+            "x": "Youtube",
+            "y": 4
+        },
+        {
+            "x": "World Cup",
+            "y": 4
+        },
+        {
+            "x": "Fifa",
+            "y": 3
+        }
+    ],
+    "Popular-Qatar-Entertainment-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "Popular-Qatar-Entertainment-words": [
+        {
+            "x": "كأس العالم",
+            "y": 16
+        },
+        {
+            "x": "رابط",
+            "y": 11
+        },
+        {
+            "x": "Instagram",
+            "y": 10
+        },
+        {
+            "x": "Adnan",
+            "y": 8
+        },
+        {
+            "x": "الحلقة",
+            "y": 7
+        },
+        {
+            "x": "قطر",
+            "y": 7
+        },
+        {
+            "x": "أجواء كأس",
+            "y": 7
+        },
+        {
+            "x": "Twitter",
+            "y": 6
+        },
+        {
+            "x": "سعود",
+            "y": 6
+        },
+        {
+            "x": "تويتر",
+            "y": 6
+        }
+    ],
+    "Popular-Qatar-Science & Technology-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.142857142857143,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.142857142857143
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.4285714285714284,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.4285714285714284
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.5714285714285714,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.5714285714285714
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.142857142857143,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.142857142857143
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.2857142857142856,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.2857142857142856
+                }
+            ]
+        }
+    ],
+    "Popular-Qatar-Science & Technology-words": [
+        {
+            "x": "Prize",
+            "y": 4
+        },
+        {
+            "x": "Month",
+            "y": 3
+        },
+        {
+            "x": "Crunchlabs",
+            "y": 2
+        },
+        {
+            "x": "Build",
+            "y": 2
+        },
+        {
+            "x": "Free",
+            "y": 2
+        },
+        {
+            "x": "Video",
+            "y": 2
+        },
+        {
+            "x": "Detail",
+            "y": 2
+        },
+        {
+            "x": "Promotion",
+            "y": 2
+        },
+        {
+            "x": "Monthly",
+            "y": 2
+        },
+        {
+            "x": "Entry",
+            "y": 2
+        }
+    ],
+    "Popular-Qatar-People & Blogs-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.2,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.2
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 1.4,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 1.4
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.4,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.4
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 1.8,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 1.8
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 0,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "Popular-Qatar-People & Blogs-words": [
+        {
+            "x": "قطر",
+            "y": 11
+        },
+        {
+            "x": "كاس العالم",
+            "y": 9
+        },
+        {
+            "x": "اليوم",
+            "y": 6
+        },
+        {
+            "x": "مين",
+            "y": 6
+        },
+        {
+            "x": "من الملعب",
+            "y": 6
+        },
+        {
+            "x": "سلسلة",
+            "y": 5
+        },
+        {
+            "x": "رابط",
+            "y": 4
+        },
+        {
+            "x": "يوم",
+            "y": 4
+        },
+        {
+            "x": "تابعوا اخر",
+            "y": 4
+        },
+        {
+            "x": "اخر فيديو",
+            "y": 4
+        }
+    ],
+    "Popular-United States-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 3.4752475247524752,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 3.4752475247524752
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.762376237623762,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.762376237623762
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.6534653465346536,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.6534653465346536
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2.683168316831683,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2.683168316831683
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.7128712871287128,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.7128712871287128
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.663366336633663,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.663366336633663
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.4356435643564356,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.4356435643564356
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.8316831683168315,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.8316831683168315
+                }
+            ]
+        }
+    ],
+    "Popular-United States-words": [
+        {
+            "x": "Subscribe",
+            "y": 36
+        },
+        {
+            "x": "Twitter",
+            "y": 33
+        },
+        {
+            "x": "Video",
+            "y": 27
+        },
+        {
+            "x": "Fox Soccer",
+            "y": 27
+        },
+        {
+            "x": "Instagram",
+            "y": 26
+        },
+        {
+            "x": "Youtube Channel",
+            "y": 24
+        },
+        {
+            "x": "Follow",
+            "y": 23
+        },
+        {
+            "x": "New",
+            "y": 18
+        },
+        {
+            "x": "Minecraft",
+            "y": 18
+        },
+        {
+            "x": "Free",
+            "y": 16
+        }
+    ],
+    "Popular-United States-Science & Technology-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.142857142857143,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.142857142857143
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.4285714285714284,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.4285714285714284
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.5714285714285714,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.5714285714285714
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.142857142857143,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.142857142857143
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.2857142857142856,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.2857142857142856
+                }
+            ]
+        }
+    ],
+    "Popular-United States-Science & Technology-words": [
+        {
+            "x": "Prize",
+            "y": 4
+        },
+        {
+            "x": "Month",
+            "y": 3
+        },
+        {
+            "x": "Crunchlabs",
+            "y": 2
+        },
+        {
+            "x": "Build",
+            "y": 2
+        },
+        {
+            "x": "Free",
+            "y": 2
+        },
+        {
+            "x": "Video",
+            "y": 2
+        },
+        {
+            "x": "Detail",
+            "y": 2
+        },
+        {
+            "x": "Promotion",
+            "y": 2
+        },
+        {
+            "x": "Monthly",
+            "y": 2
+        },
+        {
+            "x": "Entry",
+            "y": 2
+        }
+    ],
+    "Popular-United States-Gaming-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 2.92,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 2.92
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.52,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.52
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.24,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.24
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 3.72,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 3.72
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.56,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.56
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 3,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.48,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.48
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 2.2,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 2.2
+                }
+            ]
+        }
+    ],
+    "Popular-United States-Gaming-words": [
+        {
+            "x": "Minecraft",
+            "y": 20
+        },
+        {
+            "x": "Twitter",
+            "y": 11
+        },
+        {
+            "x": "Video",
+            "y": 10
+        },
+        {
+            "x": "Pokemon",
+            "y": 9
+        },
+        {
+            "x": "Fnaf",
+            "y": 9
+        },
+        {
+            "x": "Day Day",
+            "y": 9
+        },
+        {
+            "x": "Play",
+            "y": 8
+        },
+        {
+            "x": "One",
+            "y": 8
+        },
+        {
+            "x": "New",
+            "y": 7
+        },
+        {
+            "x": "Thank",
+            "y": 7
+        }
+    ],
+    "Popular-United States-Sports-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 4.090909090909091,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 4.090909090909091
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.909090909090909,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.909090909090909
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.6363636363636362,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.6363636363636362
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2.2727272727272725,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2.2727272727272725
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.7272727272727273,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.7272727272727273
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.909090909090909,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.909090909090909
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.3636363636363638,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.3636363636363638
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 1.1818181818181819,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 1.1818181818181819
+                }
+            ]
+        }
+    ],
+    "Popular-United States-Sports-words": [
+        {
+            "x": "Fox Soccer",
+            "y": 27
+        },
+        {
+            "x": "Fox",
+            "y": 18
+        },
+        {
+            "x": "Youtube Channel",
+            "y": 18
+        },
+        {
+            "x": "World Cup",
+            "y": 14
+        },
+        {
+            "x": "Sports",
+            "y": 12
+        },
+        {
+            "x": "Wwe",
+            "y": 12
+        },
+        {
+            "x": "Fifa World",
+            "y": 11
+        },
+        {
+            "x": "Subscribe",
+            "y": 9
+        },
+        {
+            "x": "Content",
+            "y": 8
+        },
+        {
+            "x": "Instagram",
+            "y": 6
+        }
+    ],
+    "Popular-United States-Entertainment-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 4.454545454545455,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 4.454545454545455
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 3.272727272727273,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 3.272727272727273
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1.9090909090909092,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1.9090909090909092
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 2.1818181818181817,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 2.1818181818181817
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1.8181818181818183,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1.8181818181818183
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 2.5454545454545454,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 2.5454545454545454
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 2,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 2.5454545454545454,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 2.5454545454545454
+                }
+            ]
+        }
+    ],
+    "Popular-United States-Entertainment-words": [
+        {
+            "x": "Subscribe",
+            "y": 16
+        },
+        {
+            "x": "Youtube",
+            "y": 11
+        },
+        {
+            "x": "Video",
+            "y": 8
+        },
+        {
+            "x": "Mainstream Tracks",
+            "y": 8
+        },
+        {
+            "x": "Tracks License",
+            "y": 8
+        },
+        {
+            "x": "License Id",
+            "y": 8
+        },
+        {
+            "x": "Twitter",
+            "y": 6
+        },
+        {
+            "x": "Follow",
+            "y": 6
+        },
+        {
+            "x": "Channel",
+            "y": 6
+        },
+        {
+            "x": "Bet",
+            "y": 5
+        }
+    ],
+    "Popular-United States-Comedy-emotion": [
+        {
+            "name": "Anticipation",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Anticipation",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Disgust",
+            "radius": 2.6,
+            "values": [
+                {
+                    "label": "Disgust",
+                    "value": 2.6
+                }
+            ]
+        },
+        {
+            "name": "Joy",
+            "radius": 2.6,
+            "values": [
+                {
+                    "label": "Joy",
+                    "value": 2.6
+                }
+            ]
+        },
+        {
+            "name": "Surprise",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Surprise",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Positive",
+            "radius": 3.4000000000000004,
+            "values": [
+                {
+                    "label": "Positive",
+                    "value": 3.4000000000000004
+                }
+            ]
+        },
+        {
+            "name": "Negative",
+            "radius": 5,
+            "values": [
+                {
+                    "label": "Negative",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "name": "Fear",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Fear",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Trust",
+            "radius": 1,
+            "values": [
+                {
+                    "label": "Trust",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Anger",
+            "radius": 1.8,
+            "values": [
+                {
+                    "label": "Anger",
+                    "value": 1.8
+                }
+            ]
+        },
+        {
+            "name": "Sadness",
+            "radius": 2.6,
+            "values": [
+                {
+                    "label": "Sadness",
+                    "value": 2.6
+                }
+            ]
+        }
+    ],
+    "Popular-United States-Comedy-words": [
+        {
+            "x": "Twitter",
+            "y": 3
+        },
+        {
+            "x": "Instagram",
+            "y": 3
+        },
+        {
+            "x": "License",
+            "y": 3
+        },
+        {
+            "x": "Merch",
+            "y": 3
+        },
+        {
+            "x": "Home",
+            "y": 2
+        },
+        {
+            "x": "Depot",
+            "y": 2
+        },
+        {
+            "x": "Disneyland",
+            "y": 2
+        },
+        {
+            "x": "Thanks",
+            "y": 2
+        },
+        {
+            "x": "Watching",
+            "y": 2
+        },
+        {
+            "x": "Movie",
+            "y": 2
+        }
+    ]
+}

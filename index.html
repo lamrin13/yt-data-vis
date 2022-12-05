@@ -3,14 +3,21 @@
   <head>
     <title>TrendWatch</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bumbeishvili/d3-tip-for-v6@4/d3-tip.min.css">
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="app.js"></script>
     <script type="module" src="comparator-app.js"></script>
     <script type="module" src="radarChart.js"></script>
     <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/intro.js/minified/introjs.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.8.2.min.css"
     />
   </head>
   <body>
@@ -22,8 +29,8 @@
         markerWidth="16"
         markerHeight="13"
         ><path
+          class="arrow"
           d="M 0 0 L 5 5 L 0 10"
-          stroke="black"
           stroke-width="1"
           fill="none"
         ></path></marker
@@ -36,8 +43,8 @@
         markerWidth="16"
         markerHeight="13"
         ><path
+          class="arrow"
           d="M 10 10 L 5 5 L 0 10"
-          stroke="black"
           stroke-width="1"
           fill="none"
         ></path></marker
@@ -56,35 +63,479 @@
           fill="none"
         ></path></marker
     ></defs>
+    <div class="topnav" id="myTopnav">
+      <span id="header1">TrendWatch  &#10095; </span>
+      <span id="header2">Channel Comparator</span>
+      <button id="toggle-theme" title="Light Mode">
+        <img src="./sun.svg" style="width: 20px" />
+      </button>
+    </div>
+    <div class="modal" id="modal-one">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h5 style="color: blue;">Select upto 5 regions</h5>
+        <select
+          name="field1"
+          id="field1"
+          multiple
+          multiselect-search="true"
+          multiselect-select-all="true"
+          multiselect-max-items="5"
+        >
+          <option value="AL">Albania</option>
+          <option value="DZ">Algeria</option>
+          <option value="AS">American Samoa</option>
+          <option value="AD">Andorra</option>
+          <option value="AO">Angola</option>
+          <option value="AI">Anguilla</option>
+          <option value="AQ">Antarctica</option>
+          <option value="AG">Antigua & Barbuda</option>
+          <option value="AR">Argentina</option>
+          <option value="AM">Armenia</option>
+          <option value="AW">Aruba</option>
+          <option value="AU">Australia</option>
+          <option value="AT">Austria</option>
+          <option value="AZ">Azerbaijan</option>
+          <option value="BS">Bahamas</option>
+          <option value="BH">Bahrain</option>
+          <option value="BD">Bangladesh</option>
+          <option value="BB">Barbados</option>
+          <option value="BY">Belarus</option>
+          <option value="BE">Belgium</option>
+          <option value="BZ">Belize</option>
+          <option value="BJ">Benin</option>
+          <option value="BM">Bermuda</option>
+          <option value="BT">Bhutan</option>
+          <option value="BO">Bolivia</option>
+          <option value="BQ">Caribbean Netherlands</option>
+          <option value="BA">Bosnia & Herzegovina</option>
+          <option value="BW">Botswana</option>
+          <option value="BV">Bouvet Island</option>
+          <option value="BR">Brazil</option>
+          <option value="IO">British Indian Ocean Territory</option>
+          <option value="BN">Brunei</option>
+          <option value="BG">Bulgaria</option>
+          <option value="BF">Burkina Faso</option>
+          <option value="BI">Burundi</option>
+          <option value="KH">Cambodia</option>
+          <option value="CM">Cameroon</option>
+          <option value="CA">Canada</option>
+          <option value="CV">Cape Verde</option>
+          <option value="KY">Cayman Islands</option>
+          <option value="CF">Central African Republic</option>
+          <option value="TD">Chad</option>
+          <option value="CL">Chile</option>
+          <option value="CN">China</option>
+          <option value="CX">Christmas Island</option>
+          <option value="CC">Cocos (Keeling) Islands</option>
+          <option value="CO">Colombia</option>
+          <option value="KM">Comoros</option>
+          <option value="CG">Congo - Brazzaville</option>
+          <option value="CD">Congo - Kinshasa</option>
+          <option value="CK">Cook Islands</option>
+          <option value="CR">Costa Rica</option>
+          <option value="HR">Croatia</option>
+          <option value="CU">Cuba</option>
+          <option value="CW">Curaçao</option>
+          <option value="CY">Cyprus</option>
+          <option value="CZ">Czechia</option>
+          <option value="DK">Denmark</option>
+          <option value="DJ">Djibouti</option>
+          <option value="DM">Dominica</option>
+          <option value="DO">Dominican Republic</option>
+          <option value="EC">Ecuador</option>
+          <option value="EG">Egypt</option>
+          <option value="SV">El Salvador</option>
+          <option value="GQ">Equatorial Guinea</option>
+          <option value="ER">Eritrea</option>
+          <option value="EE">Estonia</option>
+          <option value="ET">Ethiopia</option>
+          <option value="FK">Falkland Islands (Islas Malvinas)</option>
+          <option value="FO">Faroe Islands</option>
+          <option value="FJ">Fiji</option>
+          <option value="FI">Finland</option>
+          <option value="FR">France</option>
+          <option value="GF">French Guiana</option>
+          <option value="PF">French Polynesia</option>
+          <option value="TF">French Southern Territories</option>
+          <option value="GA">Gabon</option>
+          <option value="GM">Gambia</option>
+          <option value="GE">Georgia</option>
+          <option value="DE">Germany</option>
+          <option value="GH">Ghana</option>
+          <option value="GI">Gibraltar</option>
+          <option value="GR">Greece</option>
+          <option value="GL">Greenland</option>
+          <option value="GD">Grenada</option>
+          <option value="GP">Guadeloupe</option>
+          <option value="GU">Guam</option>
+          <option value="GT">Guatemala</option>
+          <option value="GG">Guernsey</option>
+          <option value="GN">Guinea</option>
+          <option value="GW">Guinea-Bissau</option>
+          <option value="GY">Guyana</option>
+          <option value="HT">Haiti</option>
+          <option value="HM">Heard & McDonald Islands</option>
+          <option value="VA">Vatican City</option>
+          <option value="HN">Honduras</option>
+          <option value="HK">Hong Kong</option>
+          <option value="HU">Hungary</option>
+          <option value="IS">Iceland</option>
+          <option value="IN">India</option>
+          <option value="ID">Indonesia</option>
+          <option value="IE">Ireland</option>
+          <option value="IM">Isle of Man</option>
+          <option value="IL">Israel</option>
+          <option value="IT">Italy</option>
+          <option value="JM">Jamaica</option>
+          <option value="JP">Japan</option>
+          <option value="JE">Jersey</option>
+          <option value="JO">Jordan</option>
+          <option value="KZ">Kazakhstan</option>
+          <option value="KE">Kenya</option>
+          <option value="KI">Kiribati</option>
+          <option value="KR">South Korea</option>
+          <option value="XK">Kosovo</option>
+          <option value="KW">Kuwait</option>
+          <option value="KG">Kyrgyzstan</option>
+          <option value="LA">Laos</option>
+          <option value="LV">Latvia</option>
+          <option value="LB">Lebanon</option>
+          <option value="LS">Lesotho</option>
+          <option value="LR">Liberia</option>
+          <option value="LY">Libya</option>
+          <option value="LI">Liechtenstein</option>
+          <option value="LT">Lithuania</option>
+          <option value="LU">Luxembourg</option>
+          <option value="MO">Macao</option>
+          <option value="MK">North Macedonia</option>
+          <option value="MG">Madagascar</option>
+          <option value="MW">Malawi</option>
+          <option value="MY">Malaysia</option>
+          <option value="MV">Maldives</option>
+          <option value="ML">Mali</option>
+          <option value="MT">Malta</option>
+          <option value="MH">Marshall Islands</option>
+          <option value="MQ">Martinique</option>
+          <option value="MR">Mauritania</option>
+          <option value="MU">Mauritius</option>
+          <option value="YT">Mayotte</option>
+          <option value="MX">Mexico</option>
+          <option value="FM">Micronesia</option>
+          <option value="MD">Moldova</option>
+          <option value="MC">Monaco</option>
+          <option value="MN">Mongolia</option>
+          <option value="ME">Montenegro</option>
+          <option value="MS">Montserrat</option>
+          <option value="MA">Morocco</option>
+          <option value="MZ">Mozambique</option>
+          <option value="MM">Myanmar (Burma)</option>
+          <option value="NA">Namibia</option>
+          <option value="NR">Nauru</option>
+          <option value="NP">Nepal</option>
+          <option value="NL">Netherlands</option>
+          <option value="AN">Curaçao</option>
+          <option value="NC">New Caledonia</option>
+          <option value="NZ">New Zealand</option>
+          <option value="NI">Nicaragua</option>
+          <option value="NE">Niger</option>
+          <option value="NG">Nigeria</option>
+          <option value="NU">Niue</option>
+          <option value="NF">Norfolk Island</option>
+          <option value="MP">Northern Mariana Islands</option>
+          <option value="NO">Norway</option>
+          <option value="OM">Oman</option>
+          <option value="PK">Pakistan</option>
+          <option value="PW">Palau</option>
+          <option value="PS">Palestine</option>
+          <option value="PA">Panama</option>
+          <option value="PG">Papua New Guinea</option>
+          <option value="PY">Paraguay</option>
+          <option value="PE">Peru</option>
+          <option value="PH">Philippines</option>
+          <option value="PN">Pitcairn Islands</option>
+          <option value="PL">Poland</option>
+          <option value="PT">Portugal</option>
+          <option value="PR">Puerto Rico</option>
+          <option value="QA">Qatar</option>
+          <option value="RO">Romania</option>
+          <option value="RU">Russia</option>
+          <option value="RW">Rwanda</option>
+          <option value="BL">St. Barthélemy</option>
+          <option value="SH">St. Helena</option>
+          <option value="KN">St. Kitts & Nevis</option>
+          <option value="LC">St. Lucia</option>
+          <option value="MF">St. Martin</option>
+          <option value="PM">St. Pierre & Miquelon</option>
+          <option value="VC">St. Vincent & Grenadines</option>
+          <option value="WS">Samoa</option>
+          <option value="SM">San Marino</option>
+          <option value="ST">São Tomé & Príncipe</option>
+          <option value="SA">Saudi Arabia</option>
+          <option value="SN">Senegal</option>
+          <option value="RS">Serbia</option>
+          <option value="CS">Serbia</option>
+          <option value="SC">Seychelles</option>
+          <option value="SL">Sierra Leone</option>
+          <option value="SG">Singapore</option>
+          <option value="SX">Sint Maarten</option>
+          <option value="SK">Slovakia</option>
+          <option value="SI">Slovenia</option>
+          <option value="SB">Solomon Islands</option>
+          <option value="SO">Somalia</option>
+          <option value="ZA">South Africa</option>
+          <option value="GS">South Georgia & South Sandwich Islands</option>
+          <option value="SS">South Sudan</option>
+          <option value="ES">Spain</option>
+          <option value="LK">Sri Lanka</option>
+          <option value="SD">Sudan</option>
+          <option value="SR">Suriname</option>
+          <option value="SJ">Svalbard & Jan Mayen</option>
+          <option value="SZ">Eswatini</option>
+          <option value="SE">Sweden</option>
+          <option value="CH">Switzerland</option>
+          <option value="SY">Syria</option>
+          <option value="TW">Taiwan</option>
+          <option value="TJ">Tajikistan</option>
+          <option value="TZ">Tanzania</option>
+          <option value="TH">Thailand</option>
+          <option value="TL">Timor-Leste</option>
+          <option value="TG">Togo</option>
+          <option value="TK">Tokelau</option>
+          <option value="TO">Tonga</option>
+          <option value="TT">Trinidad & Tobago</option>
+          <option value="TN">Tunisia</option>
+          <option value="TR">Turkey</option>
+          <option value="TM">Turkmenistan</option>
+          <option value="TC">Turks & Caicos Islands</option>
+          <option value="TV">Tuvalu</option>
+          <option value="UG">Uganda</option>
+          <option value="UA">Ukraine</option>
+          <option value="AE">United Arab Emirates</option>
+          <option value="GB">United Kingdom</option>
+          <option value="US">United States</option>
+          <option value="UM">U.S. Outlying Islands</option>
+          <option value="UY">Uruguay</option>
+          <option value="UZ">Uzbekistan</option>
+          <option value="VU">Vanuatu</option>
+          <option value="VE">Venezuela</option>
+          <option value="VN">Vietnam</option>
+          <option value="VG">British Virgin Islands</option>
+          <option value="VI">U.S. Virgin Islands</option>
+          <option value="WF">Wallis & Futuna</option>
+          <option value="EH">Western Sahara</option>
+          <option value="YE">Yemen</option>
+          <option value="ZM">Zambia</option>
+          <option value="ZW">Zimbabwe</option>
+        </select>
+        <button id="update">Update</button>
+        <a class="modal-close modal-exit">X</a>
+      </div>
+    </div>
+    <div class="modal" id="modal-info">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h4 style="color: blue">Stacked Area Chart</h4>
+        <p>
+          The stacked area chart shows comparision between number of views on
+          three different channels over the period of one year.
+        </p>
+        <a class="modal-close modal-exit">X</a>
+      </div>
+    </div>
+    <div class="modal" id="modal-info-b1">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h4 style="color: blue">Bubble Chart</h4>
+        <p>
+          The bubble chart shows the like/view ratio vs the weekday on which the
+          video was uploaded. The size of the circle shows the number of
+          comments on the vides. And the color of the bubble diffrentiates the
+          channels.
+        </p>
+        <a class="modal-close modal-exit">X</a>
+      </div>
+    </div>
+    <div class="modal" id="modal-info-r">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h5 style="color: blue">Radar Chart</h5>
+        <p>
+          The Radar Chart shows sentiment analysis of the comments on the top 50
+          videos of channel. The color of polygon identifies the channel.
+        </p>
+        <a class="modal-close modal-exit">X</a>
+      </div>
+    </div>
+    <div class="modal" id="modal-info-t">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h4 style="color: blue">Tree Map</h4>
+        <p>
+          The treemap shows the hierarchical data of popular videos. Based on
+          selected regions total views, views by category and views by channels
+          are filtered by clicking on the rectangles.
+        </p>
+        <a class="modal-close modal-exit">X</a>
+      </div>
+    </div>
+    <div class="modal" id="modal-info-b">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h4 style="color: blue">Bubble Chart</h4>
+        <p>
+          The bubble chart shows the like/view vs weekday of uploading video.
+          The size of the bubble encodes the number of comments.
+        </p>
+        <a class="modal-close modal-exit">X</a>
+      </div>
+    </div>
+    <div class="modal" id="modal-info-f">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h4 style="color: blue">Flower Chart</h4>
+        <p>
+          The flower chart shows sentiment analysis of videos' title and
+          description. The size of the flower petal is proportional to the
+          dominance of the emotion.
+        </p>
+        <a class="modal-close modal-exit">X</a>
+      </div>
+    </div>
+    <div class="modal" id="modal-info-w">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h4 style="color: blue">Bar Chart</h4>
+        <p>
+          The bar chart shows the most frequently used words in the videos'
+          title and description.
+        </p>
+        <a class="modal-close modal-exit">X</a>
+      </div>
+    </div>
+    <div class="modal" id="modal-channel">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h5 style="color: blue">Enter Channel names</h5>
+        <input type="text" placeholder="channel 1" id="c1"> 
+        <input type="text" placeholder="channel 2" id="c2"> 
+        <input type="text" placeholder="channel 3" id="c3">
+        <button id="channelData">Get Data</button>
+        <a class="modal-close modal-exit">X</a>
+      </div>
+    </div>
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <div class="container">
-          <div id="observablehq-chart1-935c21d9" class="charts"></div>
-          <!-- <div id="bubble1" ></div> -->
-          <div id="bubble" class="charts"></div>
+        <div style="text-align: center;">
+          <span class="page-title">Want to know the strategy for trending videos? Click on Data and get started!</span>
         </div>
-        <div class="container1">
-          <div id="flowerroot" class="charts"></div>
+        <div class="new-container">
+          <span class="tree-title">
+            Popular Videos TreeMap: Popular video by region, category and channel.
+            Click on rectangles to filter data
+          </span>
+          <div id="tree-container"></div>
+          <div id="tree-filters">
+            <input type='checkbox' class="fcheck" value='QA' checked/>
+            <span style="width:100px;">Qatar</span><br>
+            <input type='checkbox' class="fcheck" value='AU' checked/>
+            <span style="width:100px;">Australia</span><br>
+            <input type='checkbox' class="fcheck" value='IN' checked/>
+            <span style="width:100px;">India</span><br>
+            <input type='checkbox' class="fcheck" value='US' checked/>
+            <span style="width:100px;">United States</span><br>
+            <input type='checkbox' class="fcheck" value='JP' checked/>
+            <span style="width:100px;">Japan</span>
+            <button id="live" data-modal="modal-one" title="Update visulization data">Data</button>
+          </div>
+          <span class="bubble-title">
+            Like/View vs. Weekday of upload of the video. The bubble size shows
+            number of comments.
+          </span>
+          <div id="bubble"></div>
+          <span class="bar-title">
+            Word Count vs. Words: Most frequently used words and their count in
+            the video titles and description
+          </span>
           <div id="barplot"></div>
+          <span class="flower-title">
+            Emotion Flower: Sentiment score from 0 to 5 for each emotion of the video titles and descriptions
+          </span>
+          <div class="flower-container"></div>
+          <!--<button id="ibutton-t" title="Click for info" data-modal="modal-info-t">i</button>-->
+        
+        
+        <!-- <button
+            id="ibutton-b"
+            title="Click for info"
+            data-modal="modal-info-b"
+          >
+            i
+          </button> -->
+       
+        <!--<button id="ibutton-w" title="Click for info" data-modal="modal-info-w">i</button>-->
+          <!-- <button
+            id="ibutton-f"
+            title="Click for info"
+            data-modal="modal-info-f"
+          >
+            i
+          </button> -->
         </div>
+        <div id="visulization"></div>
       </div>
+      
       <div class="mySlides fade">
-        <div class="container">
-          <div id="my_dataviz"></div>
-          <div class="radarChart"></div>
-        </div>
-        <div class="contianer1">
-          <div id="bubble1" class="charts"></div>
+        <div class="new-container">
+          <div style="text-align: center;">
+            <span class="page-title">Want to compare channels and their recent performance? Click on Channels and get started!</span>
+          </div>
+          <div class="main-graph">
+            <span class="st-title">Views vs Months: Total monthly views on three channel over past one year (2022)</span>
+            <div id="my_dataviz"></div>
+            <div id="legend">
+              <div class="square" style="background-color:#00A0B0;"></div> GMHikaru<br>
+              <div class="square" style="background-color:#CC333F;"></div> GothamChess<br>
+              <div class="square" style="background-color:#EDC951;"></div> agadmator's Chess Channel<br>
+            </div>
+            <!-- <button
+              id="ibutton-st"
+              title="Click for info"
+              data-modal="modal-info"
+            >
+              i
+            </button> -->
+          </div>
+          <div class="sub-graphs">
+            <span class="b1-title">Like/view vs Weekday of upload video. The bubble size shows comment count</span>
+            <div id="bubble1"></div>
+            <!-- <button
+              id="ibutton-b1"
+              title="Click for info"
+              data-modal="modal-info-b1"
+            >
+              i
+            </button> -->
+            <span class="radar-title">Emotion Radar: Shows percentage of words related to emotion in comments</span>
+            <div class="radarChart"></div>
+            <!-- <button
+              id="ibutton-r"
+              title="Click for info"
+              data-modal="modal-info-r"
+            >
+              i
+            </button> -->
+          </div>
+          <button id="channel-button" data-modal="modal-channel" title="Update visulization data">Channels</button>
+          <div id="visulization1"></div>
         </div>
       </div>
-
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <script type="module">
       import { plusSlides } from "./app.js";
       window.plusSlides = plusSlides;
-
       introJs()
         .setOptions({
           // tooltipClass: "customTooltip",
@@ -98,14 +549,14 @@
             },
             {
               title: "TreeMap - The Filter",
-              element: document.querySelector("#observablehq-chart1-935c21d9"),
+              element: document.querySelector("#tree-container"),
               intro: `Click on the rectangles to see view count for categories and channels.<br/>
-                      Click on the title-bar to go back.<br/>
+                      Click on thet title-bar to go back.<br/>
                       This section also act as the filter for all the other sections.`,
             },
             {
               title: "Flower of Emotions",
-              element: document.querySelector("#flowerroot"),
+              element: document.querySelector(".flower-container"),
               intro: `This flower-plot shows sentiment analysis of video titles.<br/>
                       Hover over the petals to see the emotion score out of 5.`,
             },
@@ -128,9 +579,15 @@
               intro: `Want to compare performance of multiple channels? <br/>
                       Click on this button!`,
             },
+            {
+              title: "Change Theme",
+              element: document.querySelector("#toggle-theme"),
+              intro: `Toggle between dark and light themes.`,
+            },
           ],
         })
         .start();
     </script>
+    <script src="multi-select-dropdown.js"></script>
   </body>
 </html>
