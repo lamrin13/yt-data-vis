@@ -68,7 +68,7 @@ export function dataLoad(title) {
     flower.redefine("data", emo_data[title + '-emotion']);
     bar_plot.redefine("data", emo_data[title + '-words']);
 }
-let regions = ['QA','AU',"IN",'US','JP'];
+let regions = ['QA', 'AU', "IN", 'US', 'JP'];
 let selectedInit = regions.map(d => d);
 let checkboxElems = document.querySelectorAll(".fcheck");
 
@@ -92,9 +92,9 @@ checkboxElems.forEach(box => {
 
 async function getData(type) {
     let r = regions.toString();
-    const tree_url = 'http://django-env.eba-unf383dm.us-west-2.elasticbeanstalk.com/popular/videos?region=' + r;
-    const bubble_url = 'http://django-env.eba-unf383dm.us-west-2.elasticbeanstalk.com/popular/bubbles?region=' + r;
-    const emo_url = 'http://django-env.eba-unf383dm.us-west-2.elasticbeanstalk.com/popular/emotions?region=' + r;
+    const tree_url = 'https://yt-backend.lamrin.dev/popular/videos?region=' + r;
+    const bubble_url = 'https://yt-backend.lamrin.dev/popular/bubbles?region=' + r;
+    const emo_url = 'https://yt-backend.lamrin.dev/popular/emotions?region=' + r;
 
     document.querySelector(".modal-close").click();
     let vis = document.querySelector("#visulization");
@@ -134,37 +134,29 @@ async function getData(type) {
         })
         document.getElementById("tree-filters").innerHTML = html +
             `<button id="live" data-modal="modal-one" title="Update visulization data">Data</button>`;
+
+        let selected = regions.map(d => d);
+        let checkboxElems = document.querySelectorAll(".fcheck");
+        checkboxElems.forEach(box => {
+            box.addEventListener("click", e => {
+                let idx = selected.indexOf(e.target.value);
+                if (idx > -1) {
+                    if (selected.length === 1) {
+                        box.checked = true;
+                        return;
+                    }
+                    selected.splice(idx, 1);
+                }
+                else
+                    selected.push(e.target.value);
+                console.log(selected);
+                regions = [...selected];
+                getData("filter");
+            });
+        });
     }
 
-    let selected = regions.map(d => d);
-    let checkboxElems = document.querySelectorAll(".fcheck");
-    checkboxElems.forEach(box => {
-        box.addEventListener("click", e => {
-            let idx = selected.indexOf(e.target.value);
-            if (idx > -1) {
-                if (selected.length === 1) {
-                    box.checked = true;
-                    return;
-                }
-                selected.splice(idx, 1);
-            }
-            else
-                selected.push(e.target.value);
-            console.log(selected);
-            regions = [...selected];
-            getData("filter");
-            // let copy = { ...pop_data };
-            // copy.children = copy.children.filter(d => {
-            //     return selected.includes(d.name);
-            // });
 
-            // main.redefine("data", copy);
-            // bubble_plot.redefine("data", bubble_data['Popular-bubble'])
-
-            // flower.redefine("data", emo_data['Popular-emotion']);
-            // bar_plot.redefine("data", emo_data['Popular-words']);
-        });
-    });
     let modalButton = document.getElementById("live");
     modalButton.onclick = () => {
         let modal = document.getElementById("modal-one");
@@ -197,8 +189,8 @@ async function getChannelData() {
     let c2 = document.getElementById("c2").value;
     let c3 = document.getElementById("c3").value;
 
-    const url1 = "http://django-env.eba-unf383dm.us-west-2.elasticbeanstalk.com/channels/channel_stat/?name=" + c1 + "," + c2 + "," + c3;
-    const url2 = "http://django-env.eba-unf383dm.us-west-2.elasticbeanstalk.com/channels/comments?name=" + c1 + "," + c2 + "," + c3;
+    const url1 = "https://yt-backend.lamrin.dev/channels/channel_stat/?name=" + c1 + "," + c2 + "," + c3;
+    const url2 = "https://yt-backend.lamrin.dev/channels/comments?name=" + c1 + "," + c2 + "," + c3;
 
     document.querySelector(".modal-close").click();
     let vis = document.querySelector("#visulization1");
